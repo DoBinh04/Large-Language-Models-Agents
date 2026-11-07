@@ -1,0 +1,93 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  55%|█████▌    | 110/199 [00:00<00:00, 1079.68it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 1473.89it/s]
+Strategy=fixed_256 k=5 | generator=claude-haiku-5-5 | judge=claude-haiku-5-5 | embedder=BAAI/bge-small-en-v1.5
+
+[G01] faith=1.00 rel=0.921 P_gt=0.20 P_llm=0.20
+[G02] faith=1.00 rel=0.826 P_gt=0.20 P_llm=0.40
+[G03] faith=1.00 rel=0.679 P_gt=0.20 P_llm=0.40
+[G04] faith=1.00 rel=0.807 P_gt=0.20 P_llm=0.40
+[G05] faith=1.00 rel=0.787 P_gt=0.40 P_llm=0.40
+[G06] faith=1.00 rel=0.777 P_gt=0.40 P_llm=0.60
+[G07] faith=1.00 rel=0.803 P_gt=0.40 P_llm=0.40
+[G08] faith=1.00 rel=0.908 P_gt=0.20 P_llm=0.20
+[G09] faith=1.00 rel=0.777 P_gt=0.20 P_llm=0.20
+[G10] faith=1.00 rel=0.891 P_gt=0.20 P_llm=0.20
+[G11] faith=1.00 rel=0.801 P_gt=0.20 P_llm=0.40
+[G12] faith=1.00 rel=0.745 P_gt=0.20 P_llm=0.20
+[G13] faith=1.00 rel=0.816 P_gt=0.20 P_llm=0.20
+[G14] faith=0.75 rel=0.818 P_gt=0.20 P_llm=0.40
+[G15] faith=1.00 (abstain) rel=0.466 P_gt=0.00 P_llm=0.00
+[G16] faith=1.00 rel=0.767 P_gt=0.20 P_llm=0.20
+[G17] faith=1.00 rel=0.776 P_gt=0.20 P_llm=0.20
+[G18] faith=1.00 rel=0.748 P_gt=0.20 P_llm=0.20
+[G19] faith=1.00 rel=0.853 P_gt=0.20 P_llm=0.20
+[G20] faith=1.00 (abstain) rel=0.439 P_gt=— P_llm=—
+
+# RAG evaluation: golden set
+
+- Strategy `fixed_256`, top-k = 5, generator `claude-haiku-5-5`, judge `claude-haiku-5-5`
+- Judge usage: 40 calls, 112,314 in / 13,349 out tokens
+
+| Metric | Giá trị | Ghi chú |
+|---|---|---|
+| **Faithfulness** (LLM judge) | 0.988 | 1 claim không có trong context, trên tổng 58 claim |
+| **Answer relevance** (cosine) | 0.770 | mốc cos(question, đáp án chuẩn) = 0.608; normalized = 1.276 |
+| **Context precision@5** (ground truth) | 0.221 | AP = 0.883 (thưởng xếp chunk đúng lên đầu) |
+| Context precision@5 (LLM judge) | 0.284 | AP = 0.892; đồng thuận nhãn với ground truth = 0.937 |
+| Abstention | 1/1 câu không-trả-lời-được đã từ chối đúng | 1/19 câu trả-lời-được bị từ chối nhầm |
+
+## Theo loại câu hỏi
+
+| Loại | n | Faithfulness | Relevance | Precision (GT) | Precision (LLM) |
+|---|---|---|---|---|---|
+| single-fact + distractor | 1 | 1.000 | 0.921 | 0.200 | 0.200 |
+| multi-evidence (same section) | 1 | 1.000 | 0.826 | 0.200 | 0.400 |
+| paraphrase (low lexical overlap) | 1 | 1.000 | 0.679 | 0.200 | 0.400 |
+| long evidence (numbered list) | 1 | 1.000 | 0.807 | 0.200 | 0.400 |
+| single-fact + many numeric distractors | 1 | 1.000 | 0.787 | 0.400 | 0.400 |
+| multi-hop (two distant sections) | 1 | 1.000 | 0.777 | 0.400 | 0.600 |
+| single-fact (conditional rule) | 1 | 1.000 | 0.803 | 0.400 | 0.400 |
+| multi-evidence (adjacent sentences) | 2 | 1.000 | 0.842 | 0.200 | 0.200 |
+| single-fact (paraphrase) | 1 | 1.000 | 0.777 | 0.200 | 0.200 |
+| single-fact (reasoning: why) | 2 | 0.875 | 0.854 | 0.200 | 0.300 |
+| single-fact (date) | 1 | 1.000 | 0.801 | 0.200 | 0.400 |
+| multi-evidence (rule + exception) | 1 | 1.000 | 0.745 | 0.200 | 0.200 |
+| multi-hop (reasoning within a section) | 1 | 1.000 | 0.816 | 0.200 | 0.200 |
+| procedure (conditional) | 1 | 1.000 | 0.466 | 0.000 | 0.000 |
+| paraphrase (mechanism) | 1 | 1.000 | 0.767 | 0.200 | 0.200 |
+| numeric reasoning | 1 | 1.000 | 0.748 | 0.200 | 0.200 |
+| single-fact (timeline) | 1 | 1.000 | 0.853 | 0.200 | 0.200 |
+| unanswerable (should abstain) | 1 | 1.000 | 0.439 | — | — |
+
+## Từng câu
+
+| ID | Faith | Claims (unsup.) | Abstain | Relevance | Rel/ref | P_gt | AP_gt | P_llm | Agree |
+|---|---|---|---|---|---|---|---|---|---|
+| G01 | 1.00 | 4 (0) |  | 0.921 | 1.43 | 0.20 | 1.00 | 0.20 | 1.00 |
+| G02 | 1.00 | 3 (0) |  | 0.826 | 1.26 | 0.20 | 1.00 | 0.40 | 0.80 |
+| G03 | 1.00 | 5 (0) |  | 0.679 | 1.19 | 0.20 | 1.00 | 0.40 | 0.80 |
+| G04 | 1.00 | 5 (0) |  | 0.807 | 1.16 | 0.20 | 1.00 | 0.40 | 0.80 |
+| G05 | 1.00 | 1 (0) |  | 0.787 | 1.20 | 0.40 | 0.83 | 0.40 | 1.00 |
+| G06 | 1.00 | 3 (0) |  | 0.777 | 1.28 | 0.40 | 0.45 | 0.60 | 0.80 |
+| G07 | 1.00 | 1 (0) |  | 0.803 | 1.28 | 0.40 | 1.00 | 0.40 | 1.00 |
+| G08 | 1.00 | 3 (0) |  | 0.908 | 1.33 | 0.20 | 1.00 | 0.20 | 1.00 |
+| G09 | 1.00 | 2 (0) |  | 0.777 | 1.32 | 0.20 | 1.00 | 0.20 | 1.00 |
+| G10 | 1.00 | 5 (0) |  | 0.891 | 1.76 | 0.20 | 0.50 | 0.20 | 1.00 |
+| G11 | 1.00 | 2 (0) |  | 0.801 | 1.13 | 0.20 | 1.00 | 0.40 | 0.80 |
+| G12 | 1.00 | 3 (0) |  | 0.745 | 1.18 | 0.20 | 1.00 | 0.20 | 1.00 |
+| G13 | 1.00 | 4 (0) |  | 0.816 | 1.23 | 0.20 | 1.00 | 0.20 | 1.00 |
+| G14 | 0.75 | 4 (1) |  | 0.818 | 1.38 | 0.20 | 1.00 | 0.40 | 0.80 |
+| G15 | 1.00 | 0 (0) | ✓ | 0.466 | 0.72 | 0.00 | 0.00 | 0.00 | 1.00 |
+| G16 | 1.00 | 5 (0) |  | 0.767 | 1.54 | 0.20 | 1.00 | 0.20 | 1.00 |
+| G17 | 1.00 | 3 (0) |  | 0.776 | 1.50 | 0.20 | 1.00 | 0.20 | 1.00 |
+| G18 | 1.00 | 3 (0) |  | 0.748 | 1.32 | 0.20 | 1.00 | 0.20 | 1.00 |
+| G19 | 1.00 | 2 (0) |  | 0.853 | 1.44 | 0.20 | 1.00 | 0.20 | 1.00 |
+| G20 | 1.00 | 0 (0) | ✓ | 0.439 | 0.89 | — | — | — | — |
+
+## Cần xem lại (mở details.jsonl)
+
+- G14: faithfulness 0.75
+- G15: precision (GT) = 0, không chunk nào trong top-5 chứa evidence
+- G15: câu trả-lời-được nhưng model từ chối
+
+Đã lưu: C:\phase3\assignment 38\results\20261107-175150

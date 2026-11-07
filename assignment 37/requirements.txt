@@ -1,0 +1,6 @@
+anthropic>=1.12
+langfuse>=3.0
+numpy>=1.24
+sentence-transformers>=2.7     # RAG 3.2 (bỏ qua được nếu chạy --embedder hashing)
+ddgs>=9.0                      # agent 3.3
+tzdata

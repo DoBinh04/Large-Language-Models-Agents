@@ -1,0 +1,23 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LLM Observability</title><style>
+:root{--bg:#f7f7f5;--card:#fff;--fg:#1f2328;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb;--bad:#dc2626;--bar:#93c5fd}
+@media (prefers-color-scheme:dark){:root{--bg:#111316;--card:#1b1e23;--fg:#e6e6e6;--muted:#9aa0a6;--line:#2c3036;--accent:#60a5fa;--bad:#f87171;--bar:#1d4ed8}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:24px 16px}h1{font-size:22px;margin:0 0 4px}h2{font-size:16px;margin:28px 0 10px}
+.muted{color:var(--muted)}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:16px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}.kpi b{display:block;font-size:22px;font-variant-numeric:tabular-nums}
+.kpi span{color:var(--muted);font-size:12px}table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{font-size:12px;color:var(--muted);font-weight:600}
+td.n{text-align:right;font-variant-numeric:tabular-nums}.bad{color:var(--bad)}.bar{height:8px;background:var(--bar);border-radius:4px}
+.wrap{overflow-x:auto}
+</style></head><body><main>
+<h1>LLM Observability: RAG + Agent</h1>
+<div class="muted">2 lần chạy: 20261107-163319, 20261107-163419</div>
+<div class="kpis"><div class='kpi'><span>Traces</span><b>23</b></div><div class='kpi'><span>Failed</span><b><span class='bad'>3</span></b></div><div class='kpi'><span>LLM calls</span><b>52</b></div><div class='kpi'><span>Total cost</span><b>$0.4692</b></div><div class='kpi'><span>Avg cost / trace</span><b>$0.02040</b></div><div class='kpi'><span>Avg LLM latency</span><b>3109 ms</b></div><div class='kpi'><span>Tokens in / out</span><b>96,245 / 8,358</b></div><div class='kpi'><span>Avg top-1 similarity</span><b>0.682</b></div></div>
+<h2>Latency theo loại trace (ms)</h2><div class="wrap"><table><tr><th>Trace</th><th>n</th><th>avg</th><th>p50</th><th>p95</th><th style="width:30%"></th></tr><tr><td>rag.query</td><td class='n'>13</td><td class='n'>1772</td><td class='n'>1878</td><td class='n'>2265</td><td><div class='bar' style='width:11%'></div></td></tr><tr><td>react.run</td><td class='n'>10</td><td class='n'>16311</td><td class='n'>13709</td><td class='n'>28925</td><td><div class='bar' style='width:100%'></div></td></tr></table></div>
+<h2>LLM calls theo model</h2><div class="wrap"><table><tr><th>Model</th><th>Calls</th><th>Tokens in</th><th>Tokens out</th><th>Avg latency (ms)</th><th>Cost</th></tr><tr><td>claude-haiku-4-5-20251001</td><td class='n'>13</td><td class='n'>21,948</td><td class='n'>1,140</td><td class='n'>1717</td><td class='n'>$0.0276</td></tr><tr><td>claude-opus-5-5</td><td class='n'>39</td><td class='n'>74,297</td><td class='n'>7,218</td><td class='n'>3573</td><td class='n'>$0.4415</td></tr></table></div>
+<h2>Tools (agent)</h2><div class="wrap"><table><tr><th>Tool</th><th>Calls</th><th>Errors</th><th>Avg latency (ms)</th></tr><tr><td>tool.search_web</td><td class='n'>9</td><td class='n'>0</td><td class='n'>2609</td></tr><tr><td>tool.calculate</td><td class='n'>14</td><td class='n'>0</td><td class='n'>1</td></tr><tr><td>tool.get_current_time</td><td class='n'>6</td><td class='n'>0</td><td class='n'>27</td></tr></table></div>
+<h2>Top failed queries</h2><div class="wrap"><table><tr><th>#</th><th>Loại</th><th>Query</th><th>Lý do</th><th>Lần cuối (UTC)</th></tr><tr><td class='n'>1</td><td>rag.query</td><td>How many exoplanets has HERON discovered?</td><td>no_answer ×1</td><td>2026-11-07T09:34:11</td></tr><tr><td class='n'>1</td><td>rag.query</td><td>What is the ticket price for the night-time public observing session?</td><td>no_answer ×1</td><td>2026-11-07T09:34:09</td></tr><tr><td class='n'>1</td><td>rag.query</td><td>Who is the current president of France?</td><td>low_retrieval_score(0.43), no_answer ×1</td><td>2026-11-07T09:34:07</td></tr></table></div>
+<p class="muted">Retrieval: 13 lần, avg 48.9 ms, top-1 similarity avg 0.682 / p50 0.686.
+Prompt versions (system hash): a61c2defc4dd×13, 8420c5b1abd6×39</p>
+</main></body></html>

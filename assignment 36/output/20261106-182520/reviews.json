@@ -1,0 +1,68 @@
+[
+  {
+    "version": 1,
+    "strengths": [
+      "Hầu hết các số liệu (VinFast 175.099 xe, VF 3/VF 5/Limo Green, 428.955 và 604.054 xe, 33% và 37% của Việt Nam, Indonesia 95.000 BEV, BYD 40%, Malaysia 7%, Philippines gần 10%) khớp với ghi chú nghiên cứu và đúng nguồn được trích dẫn.",
+      "Bài viết nêu rõ các số liệu mâu thuẫn giữa các nguồn trong mục riêng, và không khẳng định quá mức các con số chưa được kiểm chứng.",
+      "Cấu trúc theo chủ đề (khu vực, Việt Nam, các thị trường khác, chính sách, quy mô và điểm cần đối chiếu) rõ ràng và dễ theo dõi.",
+      "Các phát hiện quan trọng như chuyển đổi từ CBU sang CKD, chấm dứt ưu đãi ở Indonesia và Malaysia, và 30@30 của Thái Lan đều được đưa vào."
+    ],
+    "issues": [
+      {
+        "severity": "major",
+        "description": "Câu mở đầu phần tóm tắt nói tỷ trọng xe điện ở Singapore và Việt Nam 'vượt mức của EU, Anh và Mỹ' và gắn với [3]. Phát hiện của Ember trong ghi chú không nêu so sánh với EU, Anh hay Mỹ; nội dung này chỉ xuất hiện trong phần tóm tắt chung của ghi chú, không có nguồn đi kèm.",
+        "suggestion": "Bỏ cụm 'vượt mức của EU, Anh và Mỹ' khỏi phần tóm tắt, hoặc chỉ giữ lại nếu có phát hiện cụ thể kèm nguồn hỗ trợ so sánh này."
+      },
+      {
+        "severity": "major",
+        "description": "Mục 2 viết 'Ba mẫu bán chạy nhất là VF 3, VF 5 và Limo Green [6]'. Ghi chú chỉ liệt kê số lượng bán của ba mẫu này, không xếp hạng họ là ba mẫu bán chạy nhất toàn thị trường. Đây là một suy luận không có trong ghi chú.",
+        "suggestion": "Viết lại thành 'Ba mẫu có doanh số lớn được ghi nhận là VF 3 (44.585 xe), VF 5 (43.913 xe) và Limo Green (27.127 xe) [6]', hoặc chỉ nêu số lượng mà không gọi là bán chạy nhất."
+      },
+      {
+        "severity": "minor",
+        "description": "Kết luận nói xe Trung Quốc, 'đặc biệt là BYD', có thị phần lớn ở Malaysia. Ghi chú chỉ nêu xe Trung Quốc chiếm gần 80% doanh số xe điện Malaysia, không nhắc BYD ở Malaysia. Việc nêu BYD cho cả ba thị trường là suy diễn quá mức.",
+        "suggestion": "Tách câu: xe Trung Quốc chiếm phần lớn ở Malaysia (gần 80%) [13], còn BYD được nêu riêng là hãng dẫn đầu ở Indonesia [10] và Philippines [13]."
+      },
+      {
+        "severity": "minor",
+        "description": "Bullet về tác động chính sách mới cite [11][12] cho nội dung 'chưa rõ tác động'. Đây là điểm chưa được kiểm chứng trong nghiên cứu, không phải phát hiện được hỗ trợ bởi các nguồn đó.",
+        "suggestion": "Ghi rõ đây là điểm chưa được kiểm chứng trong nghiên cứu, và chỉ cite [11][12] cho phần mô tả chính sách đã chấm dứt ưu đãi."
+      },
+      {
+        "severity": "minor",
+        "description": "Phần tóm tắt cite [6][3][10] cho việc số liệu khác nhau, nhưng [10] là một bài đăng LinkedIn có số liệu Indonesia không được ghi chú đánh giá cao; việc nêu nguồn này ở phần tóm tắt có thể gây hiểu nhầm về độ tin cậy.",
+        "suggestion": "Trong tóm tắt, cite [3][6][14] cho sự khác biệt về tỷ trọng xe điện, và ghi rõ trong mục 5 rằng số 12% của Indonesia đến từ một bình luận không chính thức."
+      }
+    ],
+    "summary": "Bài viết bám sát ghi chú nghiên cứu, hầu hết số liệu và trích dẫn đều đúng, cấu trúc rõ ràng. Có hai vấn đề lớn cần sửa: một so sánh với EU, Anh và Mỹ không được nguồn cited hỗ trợ, và việc gọi VF 3, VF 5, Limo Green là ba mẫu bán chạy nhất là suy luận không có trong ghi chú. Ngoài ra có vài điểm diễn đạt cần chỉnh để tránh suy diễn về BYD và về các điểm chưa kiểm chứng.",
+    "approved": false
+  },
+  {
+    "version": 2,
+    "strengths": [
+      "Hầu hết các số liệu khớp với ghi chú nghiên cứu và được gắn đúng mã nguồn, ví dụ Ember [3], ICCT [14], VinFast và VAMA [6][7][8], Indonesia [10] và Malaysia [13].",
+      "Các số liệu mâu thuẫn được nêu rõ trong mục 5, gồm tỷ trọng xe điện của Việt Nam, tổng doanh số Việt Nam, tỷ trọng Indonesia và hạ tầng sạc, nên người đọc được cảnh báo đúng chỗ.",
+      "Cấu trúc theo chủ đề rõ ràng: tổng quan, Việt Nam, các thị trường khác, chính sách, quy mô và điểm cần đối chiếu, kết luận.",
+      "Các khoảng trống của nghiên cứu, như tác động chính sách 2026 và số liệu hạ tầng sạc, được nói rõ thay vì suy diễn."
+    ],
+    "issues": [
+      {
+        "severity": "minor",
+        "description": "Mục 3 nêu tỷ trọng xe điện Indonesia khoảng 12% như số liệu thường, không có cảnh báo tại chỗ. Ghi chú cho thấy con số này đến từ một bình luận LinkedIn không chính thức và khác với 15% của Ember. Chỉ đến mục 5 mới có cảnh báo.",
+        "suggestion": "Thêm ngay trong mục 3 một câu cảnh báo, ví dụ: 'con số này lấy từ một bình luận không chính thức và khác với 15% của Ember [3]', để người đọc không hiểu nhầm đây là số liệu chính thức."
+      },
+      {
+        "severity": "minor",
+        "description": "Mức tăng khoảng 40% của Thái Lan năm 2025 chỉ dựa trên báo cáo thị trường của Mordor Intelligence [1], là nguồn nghiên cứu thương mại. Bài viết không nói rõ độ tin cậy yếu hơn so với IEA hay Ember.",
+        "suggestion": "Ghi rõ nguồn trong câu, ví dụ 'theo một báo cáo thị trường thương mại (Mordor Intelligence)', hoặc tìm thêm một nguồn chính thức để xác nhận con số."
+      },
+      {
+        "severity": "minor",
+        "description": "Mục 2 nêu tổng thị trường Việt Nam khoảng 550.000 xe, VinFast chiếm 'gần một phần ba', nhưng đoạn kế tiếp lại nêu 604.054 xe và thị phần 29%. Hai đoạn đặt cạnh nhau mà không có ghi chú, dễ gây khó hiểu cho người đọc.",
+        "suggestion": "Thêm một câu ngay sau hai đoạn này, ví dụ 'hai cách tính cho ra tỷ trọng khác nhau; xem mục 5', hoặc ghi rõ mẫu số của từng con số."
+      }
+    ],
+    "summary": "Bài viết trung thành với ghi chú nghiên cứu, các trích dẫn [n] đều tồn tại và khớp danh mục nguồn, không phát hiện thông tin bịa đặt. Các vấn đề còn lại chủ yếu là cảnh báo độ tin cậy và độ rõ ràng ở một số chỗ có số liệu mâu thuẫn, nên được xử lý ở mức nhỏ.",
+    "approved": true
+  }
+]

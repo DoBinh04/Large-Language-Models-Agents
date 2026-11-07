@@ -1,0 +1,95 @@
+[
+  {
+    "id": "Q01",
+    "type": "single-fact + distractor",
+    "question": "At what wind speeds must the Aurelia dome be closed?",
+    "answer": "When sustained wind exceeds 18 m/s or gusts exceed 22 m/s.",
+    "evidence": [
+      "The Aurelia dome must be closed when the sustained wind speed exceeds 18 metres per second, or when gusts exceed 22 metres per second."
+    ]
+  },
+  {
+    "id": "Q02",
+    "type": "multi-evidence (same section)",
+    "question": "How many members sit on the committee that reviews observing proposals, and what share of Aurelia time is kept outside its normal review?",
+    "answer": "The TAC has nine members; 5% of Aurelia time is reserved as Director's Discretionary Time.",
+    "evidence": [
+      "The TAC has nine members: one appointed by each of the seven member institutions, plus two external astronomers from outside the consortium who serve rotating three-year terms.",
+      "Five percent of all Aurelia time is reserved as Director's Discretionary Time."
+    ]
+  },
+  {
+    "id": "Q03",
+    "type": "paraphrase (low lexical overlap)",
+    "question": "A visitor at the summit becomes confused and struggles to breathe even while sitting still. What should staff do?",
+    "answer": "Give supplemental oxygen immediately and drive them down to the Midway Lodge without waiting for symptoms to improve.",
+    "evidence": [
+      "Any person showing severe symptoms of altitude sickness, such as confusion, loss of coordination, or breathlessness while resting, must be given supplemental oxygen immediately and driven down to the Midway Lodge without waiting for the symptoms to improve."
+    ]
+  },
+  {
+    "id": "Q04",
+    "type": "long evidence (numbered list)",
+    "question": "After confirming the first instrument is ready, what are the remaining steps of the start-of-night procedure?",
+    "answer": "Open louvres 1 h before sunset; open shutter at sunset and do twilight calibrations; point at a standard star, initialise active optics and check image quality within 0.2 arcsec of seeing; hand over to the observer and log the time.",
+    "evidence": [
+      "3. Open the dome louvres one hour before sunset to begin flushing warm air out of the enclosure.\n4. Open the main dome shutter at sunset, provided all operating limits are satisfied, and begin twilight calibrations.\n5. Point the telescope at a bright standard star, run the active optics initialisation sequence, and confirm that image quality is within 0.2 arcseconds of the seeing reported by the monitor.\n6. Hand over to the observer and record the time of handover in the night log."
+    ]
+  },
+  {
+    "id": "Q05",
+    "type": "single-fact + many numeric distractors",
+    "question": "What temperature is the data centre kept at?",
+    "answer": "A constant 21 degrees Celsius all year round.",
+    "evidence": [
+      "The data centre, by contrast, is cooled to a constant 21 degrees Celsius all year round."
+    ]
+  },
+  {
+    "id": "Q06",
+    "type": "multi-hop (two distant sections)",
+    "question": "Which instrument's data are not processed by the LUMEN pipeline, and to what temperature is that instrument cooled?",
+    "answer": "OSPREY; it is cooled with liquid nitrogen to -196 degrees Celsius.",
+    "evidence": [
+      "OSPREY data are not yet processed by LUMEN; observers must reduce them with their own software.",
+      "OSPREY, a near-infrared imager and spectrograph at the Cassegrain focus, cooled with liquid nitrogen to minus 196 degrees Celsius."
+    ]
+  },
+  {
+    "id": "Q07",
+    "type": "single-fact (conditional rule)",
+    "question": "After the dome has been closed because of high humidity, when is it allowed to reopen?",
+    "answer": "Only after humidity has stayed below 80% for at least 30 continuous minutes.",
+    "evidence": [
+      "After a closure caused by humidity, the dome may only reopen once humidity has stayed below 80 percent for at least 30 continuous minutes."
+    ]
+  },
+  {
+    "id": "Q08",
+    "type": "multi-evidence (adjacent sentences)",
+    "question": "How quickly must the on-call engineer reach the site when a fault halts all observing at night?",
+    "answer": "Within 45 minutes (Severity 1 fault).",
+    "evidence": [
+      "a Severity 1 fault stops all observing on the telescope",
+      "For a Severity 1 fault occurring at night, the on-call engineer must be called immediately and must be on site within 45 minutes."
+    ]
+  },
+  {
+    "id": "Q09",
+    "type": "single-fact (paraphrase)",
+    "question": "What rules apply to outdoor lights inside the dark sky reserve?",
+    "answer": "Fully shielded (no light above horizontal) and colour temperature of 2,700 K or lower.",
+    "evidence": [
+      "Within the reserve, outdoor lighting must be fully shielded so that no light is emitted above the horizontal, and must have a colour temperature of 2,700 kelvin or lower."
+    ]
+  },
+  {
+    "id": "Q10",
+    "type": "single-fact (reasoning: why)",
+    "question": "How precisely can HERON measure radial velocities, and what makes this possible?",
+    "answer": "About 1.5 m/s, because it is housed in a room temperature-stabilised to within 0.01 degrees Celsius.",
+    "evidence": [
+      "HERON is housed in a temperature-stabilised room held to within 0.01 degrees Celsius, which allows it to measure stellar radial velocities with a precision of about 1.5 metres per second."
+    ]
+  }
+]

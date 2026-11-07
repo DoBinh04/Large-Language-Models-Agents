@@ -1,0 +1,4 @@
+anthropic>=1.12
+langgraph>=0.6
+ddgs>=9.0
+tzdata

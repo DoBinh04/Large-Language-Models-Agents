@@ -1,0 +1,13 @@
+Tokenizer (đếm token khi chunk): BAAI/bge-small-en-v1.5
+Embedder: BAAI/bge-small-en-v1.5 ...
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/BAAI/bge-small-en-v1.5: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'BAAI/bge-small-en-v1.5'.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  80%|########  | 160/199 [00:00<00:00, 1583.10it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1718.86it/s]
+Document: C:\phase3\assignment 32\data\sample_document.md (23,040 ký tự, 4,638 tokens)
+Questions: 10 | k = 5 | coverage threshold = 0.5
+
+[fixed_256 ] chunks= 21  avg_tok= 251.3  Recall@5=1.000  strict=1.000  MRR=0.900  R@1=0.80  R@3=0.95  split_ev=0/13  truncated=0
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (514 > 512). Running this sequence through the model will result in indexing errors
+[fixed_512 ] chunks= 11  avg_tok= 479.8  Recall@5=1.000  strict=1.000  MRR=0.800  R@1=0.55  R@3=0.95  split_ev=0/13  truncated=10
+[recursive ] chunks= 18  avg_tok= 257.7  Recall@5=1.000  strict=1.000  MRR=0.900  R@1=0.80  R@3=1.00  split_ev=0/13  truncated=0
+
+Đã lưu kết quả vào: C:\phase3\assignment 32\results\20261106_090413

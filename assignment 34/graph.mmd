@@ -1,0 +1,23 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	agent(agent)
+	human_approval(human_approval)
+	tools(tools)
+	max_steps(max_steps)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> agent;
+	agent -.-> __end__;
+	agent -.-> human_approval;
+	agent -.-> max_steps;
+	agent -.-> tools;
+	human_approval --> tools;
+	tools --> agent;
+	max_steps --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

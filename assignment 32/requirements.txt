@@ -1,0 +1,4 @@
+numpy>=1.24
+sentence-transformers>=2.7     # kéo theo torch + transformers
+pypdf>=4.0                      # chỉ cần nếu tài liệu là PDF
+anthropic>=0.40                 # chỉ cần cho Bước 6 (gọi Claude)

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "researcher",
+    "description": "Researches a topic on the web and returns findings with sources.",
+    "skills": [
+      {
+        "id": "web_research",
+        "name": "Web research",
+        "description": "Search the web, cross-check facts and return structured findings with source URLs.",
+        "input_parts": [
+          "text",
+          "data"
+        ],
+        "output_parts": [
+          "data"
+        ]
+      }
+    ],
+    "version": "1.0.0",
+    "url": "graph://researcher"
+  },
+  {
+    "name": "writer",
+    "description": "Writes a well-structured Markdown report from research notes; revises based on feedback.",
+    "skills": [
+      {
+        "id": "write_report",
+        "name": "Write report",
+        "description": "Draft a report from research findings.",
+        "input_parts": [
+          "text",
+          "data"
+        ],
+        "output_parts": [
+          "data"
+        ]
+      },
+      {
+        "id": "revise_report",
+        "name": "Revise report",
+        "description": "Revise a draft according to reviewer feedback.",
+        "input_parts": [
+          "text",
+          "data"
+        ],
+        "output_parts": [
+          "data"
+        ]
+      }
+    ],
+    "version": "1.0.0",
+    "url": "graph://writer"
+  },
+  {
+    "name": "reviewer",
+    "description": "Critically reviews a report for accuracy against sources, coverage, structure and clarity.",
+    "skills": [
+      {
+        "id": "review_report",
+        "name": "Review report",
+        "description": "List concrete major/minor issues with suggestions; approve when no major issue remains.",
+        "input_parts": [
+          "text",
+          "data"
+        ],
+        "output_parts": [
+          "data"
+        ]
+      }
+    ],
+    "version": "1.0.0",
+    "url": "graph://reviewer"
+  }
+]

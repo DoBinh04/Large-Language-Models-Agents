@@ -1,0 +1,3 @@
+anthropic>=1.12
+ddgs>=9.0        # search_web qua DuckDuckGo (không cần API key)
+tzdata           # zoneinfo trên Windows cần gói này

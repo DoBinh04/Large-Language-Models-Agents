@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "phase3-fs-python": {
+      "command": "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "args": [
+        "C:\\phase3\\assignment 35\\mcp_server.py",
+        "--root",
+        "C:\\phase3\\assignment 35\\sandbox",
+        "--wire-log",
+        "C:\\phase3\\assignment 35\\wire.log"
+      ]
+    }
+  }
+}

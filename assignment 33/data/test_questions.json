@@ -1,0 +1,62 @@
+[
+  {
+    "id": "T01",
+    "question": "Dân số Nhật Bản gấp bao nhiêu lần dân số Việt Nam? Làm tròn 2 chữ số thập phân.",
+    "expected_tools": ["search_web", "search_web", "calculate"],
+    "check": {"type": "number_range", "min": 1.15, "max": 1.35}
+  },
+  {
+    "id": "T02",
+    "question": "Hôm nay còn bao nhiêu ngày nữa thì đến ngày 1/1/2027?",
+    "expected_tools": ["get_current_time", "calculate"],
+    "check": {"type": "days_until", "date": "2027-01-01"}
+  },
+  {
+    "id": "T03",
+    "question": "Bây giờ ở Tokyo là mấy giờ, ở New York là mấy giờ, và hai nơi chênh nhau bao nhiêu tiếng?",
+    "expected_tools": ["get_current_time", "get_current_time", "calculate"],
+    "check": {"type": "number_in", "values": [13, 14]}
+  },
+  {
+    "id": "T04",
+    "question": "Gửi tiết kiệm 10.000.000 VND, lãi suất 6,5%/năm, lãi kép hằng năm trong 5 năm. Số tiền cuối kỳ là bao nhiêu và tiền lãi là bao nhiêu?",
+    "expected_tools": ["calculate", "calculate"],
+    "check": {"type": "number_close", "value": 13700866.6, "tolerance": 2}
+  },
+  {
+    "id": "T05",
+    "question": "Đội nào vô địch FIFA World Cup 2022, và tính đến năm hiện tại thì đã cách đó bao nhiêu năm?",
+    "expected_tools": ["search_web", "get_current_time", "calculate"],
+    "check": {"type": "contains", "value": "Argentina"}
+  },
+  {
+    "id": "T06",
+    "question": "Ánh sáng đi từ Mặt Trời đến Trái Đất mất bao nhiêu phút? Hãy tìm khoảng cách trung bình (1 AU) và tốc độ ánh sáng rồi tự tính.",
+    "expected_tools": ["search_web", "calculate"],
+    "check": {"type": "number_close", "value": 8.32, "tolerance": 0.05}
+  },
+  {
+    "id": "T07",
+    "question": "100 ngày nữa kể từ hôm nay là thứ mấy trong tuần?",
+    "expected_tools": ["get_current_time", "calculate"],
+    "check": {"type": "weekday_after", "days": 100}
+  },
+  {
+    "id": "T08",
+    "question": "Tháp Eiffel cao bao nhiêu mét? Cần xếp chồng bao nhiêu tháp Eiffel để vượt chiều cao đỉnh Everest?",
+    "expected_tools": ["search_web", "search_web", "calculate"],
+    "check": {"type": "number_in", "values": [27, 28, 29, 30]}
+  },
+  {
+    "id": "T09",
+    "question": "Tính GDP bình quân đầu người của Việt Nam năm 2023 (USD) từ tổng GDP và dân số năm 2023.",
+    "expected_tools": ["search_web", "search_web", "calculate"],
+    "check": {"type": "number_range", "min": 4000, "max": 4700}
+  },
+  {
+    "id": "T10",
+    "question": "Ngày hôm nay là ngày thứ bao nhiêu trong năm, và năm nay đã trôi qua bao nhiêu phần trăm (làm tròn 1 chữ số thập phân)?",
+    "expected_tools": ["get_current_time", "calculate"],
+    "check": {"type": "year_progress"}
+  }
+]
