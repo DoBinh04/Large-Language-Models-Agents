@@ -1,0 +1,12 @@
+.env
+.git
+.venv
+venv
+__pycache__/
+*.pyc
+results/
+training/
+eval/
+tests/
+*.ipynb
+.ipynb_checkpoints/

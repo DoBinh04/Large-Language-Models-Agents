@@ -1,0 +1,70 @@
+{
+ "config": "opt-sft-mixed",
+ "router": "sft",
+ "router_llm": null,
+ "agents": [
+  "claude-haiku-5-5",
+  "low"
+ ],
+ "overrides": {
+  "policy": [
+   "claude-sonnet-5-5",
+   "low"
+  ]
+ },
+ "n_scenarios": 32,
+ "n_turns": 37,
+ "task_success_rate": 0.8125,
+ "routing_acc": 1.0,
+ "intent_acc": 1.0,
+ "tool_f1_micro": {
+  "precision": 0.6032,
+  "recall": 0.95,
+  "f1": 0.7379
+ },
+ "tool_f1_macro": 0.7668,
+ "latency_ms_mean": 6373.3,
+ "latency_ms_p50": 5519.1,
+ "latency_ms_p95": 11855.4,
+ "router_ms_mean": 2218.8,
+ "cost_total_usd": 0.17857,
+ "cost_per_scenario_usd": 0.00558,
+ "cost_per_success_usd": 0.00687,
+ "llm_calls_per_turn": 2.3,
+ "input_tokens": 65032,
+ "output_tokens": 20088,
+ "cache_read_tokens": 121144,
+ "errors": 0,
+ "judge_cost_usd": 0.21204,
+ "by_category": {
+  "chitchat": {
+   "n": 1,
+   "success": 1.0
+  },
+  "multi": {
+   "n": 3,
+   "success": 0.667
+  },
+  "order": {
+   "n": 4,
+   "success": 0.75
+  },
+  "out_of_scope": {
+   "n": 1,
+   "success": 1.0
+  },
+  "policy": {
+   "n": 12,
+   "success": 0.667
+  },
+  "product": {
+   "n": 6,
+   "success": 1.0
+  },
+  "state": {
+   "n": 5,
+   "success": 1.0
+  }
+ },
+ "tools_backend": "local"
+}

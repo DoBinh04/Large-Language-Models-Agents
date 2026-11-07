@@ -1,0 +1,3742 @@
+{
+ "router": "api:claude-opus-5-5@medium",
+ "rows": [
+  {
+   "id": "S01.1",
+   "src": "eval_set",
+   "kind": "product",
+   "msg": "Mình cần tai nghe chống ồn để làm việc, tầm dưới 3 triệu",
+   "gold": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "product",
+      "task": "Tư vấn, tìm tai nghe chống ồn phù hợp để làm việc, giá dưới 3 triệu; nêu thông số chính, giá và tình trạng tồn kho."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "tai nghe chống ồn"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2228.6,
+   "cost_usd": 0.003704,
+   "error": null
+  },
+  {
+   "id": "S02.1",
+   "src": "eval_set",
+   "kind": "product",
+   "msg": "Laptop Nova Air 14 có nâng cấp RAM được không?",
+   "gold": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "product",
+      "task": "Tra cứu thông số laptop Nova Air 14: RAM hàn onboard hay có khe cắm, dung lượng RAM tối đa hỗ trợ và khả năng nâng cấp RAM."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "Nova Air 14"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2395.0,
+   "cost_usd": 0.003732,
+   "error": null
+  },
+  {
+   "id": "S03.1",
+   "src": "eval_set",
+   "kind": "product",
+   "msg": "So sánh giúp mình Nova Creator 16 với Vortex Strike 15, mình dựng phim là chính",
+   "gold": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "product",
+      "task": "So sánh laptop Nova Creator 16 và Vortex Strike 15 (cấu hình CPU, GPU, RAM, màn hình, giá, tồn kho), tư vấn mẫu phù hợp hơn cho nhu cầu dựng phim/chỉnh sửa video"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "Nova Creator 16, Vortex Strike 15"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2603.8,
+   "cost_usd": 0.004568,
+   "error": null
+  },
+  {
+   "id": "S04.1",
+   "src": "eval_set",
+   "kind": "product",
+   "msg": "Loa SoundMax Go còn hàng không shop?",
+   "gold": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "product",
+      "task": "Kiểm tra tồn kho loa SoundMax Go và báo cho khách tình trạng còn hàng, giá bán hiện tại."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "Loa SoundMax Go"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2021.4,
+   "cost_usd": 0.003308,
+   "error": null
+  },
+  {
+   "id": "S05.1",
+   "src": "eval_set",
+   "kind": "order",
+   "msg": "Đơn DH1002 của mình giao tới đâu rồi?",
+   "gold": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và tình hình vận chuyển của đơn hàng DH1002"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1002",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2064.2,
+   "cost_usd": 0.002868,
+   "error": null
+  },
+  {
+   "id": "S06.1",
+   "src": "eval_set",
+   "kind": "order",
+   "msg": "Mình không nhớ mã đơn, số điện thoại 0901234567, kiểm tra đơn giúp mình",
+   "gold": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái đơn hàng của khách theo số điện thoại 0901234567 (khách không nhớ mã đơn)"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "0901234567",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 1985.3,
+   "cost_usd": 0.003232,
+   "error": null
+  },
+  {
+   "id": "S07.1",
+   "src": "eval_set",
+   "kind": "state",
+   "msg": "Kiểm tra đơn hàng giúp mình với",
+   "gold": {
+    "intent": "order_status",
+    "agents": [],
+    "missing": true
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [],
+    "plan": [],
+    "missing_info": [
+     "order_id"
+    ],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": ""
+    },
+    "reply": "Dạ, bạn vui lòng cung cấp mã đơn hàng (hoặc số điện thoại đặt hàng) để TechViet kiểm tra giúp bạn nhé!"
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 1894.0,
+   "cost_usd": 0.003168,
+   "error": null
+  },
+  {
+   "id": "S07.2",
+   "src": "eval_set",
+   "kind": "state",
+   "msg": "DH1003",
+   "gold": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và thông tin vận chuyển của đơn hàng DH1003"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1003",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 3494.0,
+   "cost_usd": 0.0032,
+   "error": null
+  },
+  {
+   "id": "S08.1",
+   "src": "eval_set",
+   "kind": "order",
+   "msg": "Mình muốn huỷ đơn DH1003, không cần nữa",
+   "gold": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Kiểm tra trạng thái đơn DH1003 và tiến hành huỷ đơn theo yêu cầu của khách (khách không cần nữa)."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1003",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2175.2,
+   "cost_usd": 0.003332,
+   "error": null
+  },
+  {
+   "id": "S09.1",
+   "src": "eval_set",
+   "kind": "order",
+   "msg": "Huỷ đơn DH1002 giúp mình",
+   "gold": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Kiểm tra trạng thái đơn DH1002 và thực hiện huỷ đơn nếu đủ điều kiện huỷ"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1002",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 1619.0,
+   "cost_usd": 0.003188,
+   "error": null
+  },
+  {
+   "id": "S10.1",
+   "src": "eval_set",
+   "kind": "policy",
+   "msg": "Chính sách đổi trả bên mình thế nào nếu mình đổi ý không muốn dùng nữa?",
+   "gold": {
+    "intent": "policy_question",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "policy_question",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Giải thích chính sách đổi trả khi khách đổi ý, không muốn sử dụng nữa: thời hạn đổi trả, điều kiện sản phẩm (nguyên seal/hộp, phụ kiện), phí đổi trả nếu có và quy trình thực hiện."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2956.8,
+   "cost_usd": 0.004188,
+   "error": null
+  },
+  {
+   "id": "S11.1",
+   "src": "eval_set",
+   "kind": "policy",
+   "msg": "Trả góp 0% áp dụng cho đơn từ bao nhiêu tiền?",
+   "gold": {
+    "intent": "policy_question",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "policy_question",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Tra cứu chính sách thanh toán trả góp 0%: mức giá trị đơn hàng tối thiểu được áp dụng, cùng các điều kiện kèm theo (kỳ hạn, đối tác/thẻ hỗ trợ, giấy tờ cần thiết)."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2601.5,
+   "cost_usd": 0.004176,
+   "error": null
+  },
+  {
+   "id": "S12.1",
+   "src": "eval_set",
+   "kind": "policy",
+   "msg": "Đơn thanh toán COD thì hoàn tiền mất bao lâu?",
+   "gold": {
+    "intent": "policy_question",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "policy_question",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Giải đáp chính sách hoàn tiền cho đơn thanh toán COD: thời gian hoàn tiền mất bao lâu, hình thức hoàn (chuyển khoản/tiền mặt) và thông tin khách cần cung cấp để nhận hoàn tiền."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2763.3,
+   "cost_usd": 0.004124,
+   "error": null
+  },
+  {
+   "id": "S13.1",
+   "src": "eval_set",
+   "kind": "state",
+   "msg": "Màn hình mình mới mua về bị điểm chết, muốn đổi cái khác",
+   "gold": {
+    "intent": "return_request",
+    "agents": [],
+    "missing": true
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [],
+    "plan": [],
+    "missing_info": [
+     "order_id"
+    ],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "màn hình"
+    },
+    "reply": "Rất tiếc vì màn hình bạn mới mua bị điểm chết. Để hỗ trợ đổi sản phẩm, bạn vui lòng cung cấp mã đơn hàng giúp mình nhé."
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2167.6,
+   "cost_usd": 0.003532,
+   "error": null
+  },
+  {
+   "id": "S13.2",
+   "src": "eval_set",
+   "kind": "state",
+   "msg": "Mã đơn DH1009, đổi giúp mình cái mới nhé",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện đổi trả cho đơn DH1009: màn hình mới mua bị điểm chết, khách muốn đổi sản phẩm mới. Nếu đủ điều kiện thì tạo phiếu đổi trả (đổi mới) cho đơn DH1009."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1009",
+     "phone": "",
+     "product": "màn hình"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2671.1,
+   "cost_usd": 0.004852,
+   "error": null
+  },
+  {
+   "id": "S14.1",
+   "src": "eval_set",
+   "kind": "policy",
+   "msg": "Mình muốn trả tai nghe đơn DH1001 vì không thích, hộp vẫn còn seal",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện đổi trả cho tai nghe thuộc đơn DH1001 (lý do: không thích, hộp còn nguyên seal); nếu đủ điều kiện thì tạo phiếu đổi trả."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1001",
+     "phone": "",
+     "product": "tai nghe"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2292.5,
+   "cost_usd": 0.004068,
+   "error": null
+  },
+  {
+   "id": "S15.1",
+   "src": "eval_set",
+   "kind": "policy",
+   "msg": "Đơn DH1005 mình muốn trả tai nghe Buds 2, đã mở hộp dùng thử nhưng không thích",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện đổi trả cho tai nghe Buds 2 thuộc đơn DH1005 (khách đã mở hộp, dùng thử, lý do: không thích/không vừa ý); nếu đủ điều kiện thì tạo phiếu trả hàng, nếu không thì giải thích chính sách và phương án thay thế."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1005",
+     "phone": "",
+     "product": "Buds 2"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2681.3,
+   "cost_usd": 0.0049,
+   "error": null
+  },
+  {
+   "id": "S16.1",
+   "src": "eval_set",
+   "kind": "policy",
+   "msg": "Đơn DH1005 cho mình trả con chuột Vortex M3, chưa bóc seal, làm phiếu trả hàng luôn giúp mình",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện đổi trả cho sản phẩm chuột Vortex M3 thuộc đơn DH1005 (khách cho biết chưa bóc seal); nếu đủ điều kiện thì tạo phiếu trả hàng và thông báo mã phiếu, các bước tiếp theo cho khách."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1005",
+     "phone": "",
+     "product": "Vortex M3"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2364.3,
+   "cost_usd": 0.004772,
+   "error": null
+  },
+  {
+   "id": "S17.1",
+   "src": "eval_set",
+   "kind": "policy",
+   "msg": "Đơn DH1012 mình mua 2 điện thoại Lumi A5, muốn trả cả hai vì đổi ý. Một máy đã kích hoạt, một máy còn nguyên seal. Được không?",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện đổi trả do đổi ý cho đơn DH1012 gồm 2 điện thoại Lumi A5: một máy đã kích hoạt, một máy còn nguyên seal. Đánh giá riêng từng máy, giải thích chính sách và tạo phiếu đổi trả cho máy đủ điều kiện nếu khách đồng ý."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1012",
+     "phone": "",
+     "product": "Lumi A5"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2835.7,
+   "cost_usd": 0.005232,
+   "error": null
+  },
+  {
+   "id": "S18.1",
+   "src": "eval_set",
+   "kind": "policy",
+   "msg": "Laptop Vortex Strike 15 của mình (đơn DH1007) bị liệt bàn phím, còn bảo hành không? Còn thì tạo phiếu bảo hành giúp mình",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện bảo hành cho laptop Vortex Strike 15 thuộc đơn DH1007 (lỗi liệt bàn phím); nếu còn bảo hành thì tạo phiếu bảo hành cho khách."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1007",
+     "phone": "",
+     "product": "Vortex Strike 15"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2548.4,
+   "cost_usd": 0.004408,
+   "error": null
+  },
+  {
+   "id": "S19.1",
+   "src": "eval_set",
+   "kind": "policy",
+   "msg": "Điện thoại Lumi X12 đơn DH1004 mình làm rơi vỡ màn hình, có được bảo hành không?",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện bảo hành cho điện thoại Lumi X12 thuộc đơn DH1004: khách làm rơi vỡ màn hình (hư hỏng do tác động vật lý). Giải thích chính sách bảo hành với lỗi do người dùng gây ra; nếu không được bảo hành miễn phí, tư vấn phương án sửa chữa có phí. Chỉ tạo phiếu bảo hành nếu đủ điều kiện."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1004",
+     "phone": "",
+     "product": "Lumi X12"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 3743.4,
+   "cost_usd": 0.00734,
+   "error": null
+  },
+  {
+   "id": "S20.1",
+   "src": "eval_set",
+   "kind": "policy",
+   "msg": "Bàn phím đơn DH1008 bị liệt mấy phím, mình muốn đổi cái mới",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Khách báo bàn phím trong đơn DH1008 bị liệt một số phím và muốn đổi sản phẩm mới. Kiểm tra điều kiện đổi trả do lỗi kỹ thuật của đơn DH1008 (thời hạn, tình trạng sản phẩm). Nếu đủ điều kiện thì tạo phiếu đổi mới; nếu đã quá hạn đổi trả thì hướng dẫn khách chuyển sang bảo hành."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1008",
+     "phone": "",
+     "product": "Bàn phím"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 4139.7,
+   "cost_usd": 0.007884,
+   "error": null
+  },
+  {
+   "id": "S21.1",
+   "src": "eval_set",
+   "kind": "multi",
+   "msg": "Đơn DH1002 bao giờ tới? Với lại laptop trong đơn đó sạc bằng củ 65W được không?",
+   "gold": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và thời gian giao hàng dự kiến của đơn DH1002, đồng thời xác định laptop có trong đơn."
+     },
+     {
+      "agent": "product",
+      "task": "Kiểm tra thông số sạc của laptop trong đơn DH1002 và trả lời liệu có sạc được bằng củ sạc 65W hay không."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1002",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2651.6,
+   "cost_usd": 0.004696,
+   "error": null
+  },
+  {
+   "id": "S22.1",
+   "src": "eval_set",
+   "kind": "multi",
+   "msg": "Pulse Watch 3 có đeo đi bơi được không, và nếu mua về không ưng thì trả được không?",
+   "gold": {
+    "intent": "multi",
+    "agents": [
+     "product",
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "multi",
+    "agents": [
+     "product",
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "product",
+      "task": "Kiểm tra thông số chống nước của Pulse Watch 3 (chuẩn chống nước, có đeo đi bơi được không)"
+     },
+     {
+      "agent": "policy",
+      "task": "Giải thích chính sách đổi trả khi khách mua Pulse Watch 3 về không ưng (đổi ý): thời hạn, điều kiện, phí nếu có"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "Pulse Watch 3"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2881.7,
+   "cost_usd": 0.004832,
+   "error": null
+  },
+  {
+   "id": "S23.1",
+   "src": "eval_set",
+   "kind": "state",
+   "msg": "Đơn DH1011 của mình gồm những gì vậy?",
+   "gold": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu đơn hàng DH1011 và liệt kê các sản phẩm có trong đơn (tên, số lượng, giá), kèm trạng thái đơn hiện tại."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1011",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2363.6,
+   "cost_usd": 0.003484,
+   "error": null
+  },
+  {
+   "id": "S23.2",
+   "src": "eval_set",
+   "kind": "state",
+   "msg": "Nó còn bảo hành không?",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "policy_question",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra xem các sản phẩm trong đơn DH1011 còn trong thời hạn bảo hành hay không (dựa trên ngày mua/giao hàng và chính sách bảo hành của từng sản phẩm), và cho khách biết thời hạn bảo hành còn lại."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1011",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": false,
+   "json_valid": true,
+   "latency_ms": 4490.1,
+   "cost_usd": 0.00922,
+   "error": null
+  },
+  {
+   "id": "S24.1",
+   "src": "eval_set",
+   "kind": "state",
+   "msg": "Tư vấn giúp mình điện thoại pin trâu dưới 5 triệu",
+   "gold": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "product",
+      "task": "Tư vấn các mẫu điện thoại có pin dung lượng lớn (pin trâu), giá dưới 5 triệu đồng; nêu thông số pin, giá, tình trạng tồn kho và so sánh ngắn để khách lựa chọn."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "điện thoại pin trâu dưới 5 triệu"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2181.7,
+   "cost_usd": 0.004352,
+   "error": null
+  },
+  {
+   "id": "S24.2",
+   "src": "eval_set",
+   "kind": "state",
+   "msg": "Máy đó có NFC không?",
+   "gold": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "product",
+      "task": "Kiểm tra xem (các) điện thoại pin trâu dưới 5 triệu vừa được tư vấn ở lượt trước có hỗ trợ NFC không; nếu đã gợi ý nhiều mẫu thì trả lời cho từng mẫu"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "điện thoại pin trâu dưới 5 triệu"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2510.7,
+   "cost_usd": 0.004604,
+   "error": null
+  },
+  {
+   "id": "S25.1",
+   "src": "eval_set",
+   "kind": "chitchat",
+   "msg": "Chào shop",
+   "gold": {
+    "intent": "chitchat",
+    "agents": [],
+    "missing": false
+   },
+   "pred": {
+    "intent": "chitchat",
+    "agents": [],
+    "plan": [],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": ""
+    },
+    "reply": "Chào bạn! TechViet rất vui được hỗ trợ bạn. Bạn cần tư vấn sản phẩm, tra cứu đơn hàng hay hỏi về chính sách đổi trả, bảo hành ạ?"
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 1841.3,
+   "cost_usd": 0.003392,
+   "error": null
+  },
+  {
+   "id": "S26.1",
+   "src": "eval_set",
+   "kind": "out_of_scope",
+   "msg": "Viết cho mình một bài thơ về mùa thu Hà Nội",
+   "gold": {
+    "intent": "out_of_scope",
+    "agents": [],
+    "missing": false
+   },
+   "pred": {
+    "intent": "out_of_scope",
+    "agents": [],
+    "plan": [],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": ""
+    },
+    "reply": "Xin lỗi bạn, TechViet chỉ hỗ trợ các vấn đề về sản phẩm, đơn hàng và chính sách của cửa hàng nên mình chưa thể viết thơ giúp bạn được. Nếu bạn cần tư vấn sản phẩm, tra cứu đơn hàng hay hỏi về đổi trả, bảo hành, mình luôn sẵn sàng hỗ trợ nhé!"
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2878.4,
+   "cost_usd": 0.004952,
+   "error": null
+  },
+  {
+   "id": "S27.1",
+   "src": "eval_set",
+   "kind": "policy",
+   "msg": "Mình muốn trả hàng đơn DH1006",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện đổi trả cho đơn DH1006 theo chính sách và tạo phiếu trả hàng nếu đủ điều kiện"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1006",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2105.7,
+   "cost_usd": 0.003368,
+   "error": null
+  },
+  {
+   "id": "S28.1",
+   "src": "eval_set",
+   "kind": "state",
+   "msg": "Tai nghe gaming của mình bị mất tiếng một bên, bảo hành kiểu gì?",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [],
+    "missing": true
+   },
+   "pred": {
+    "intent": "warranty_claim",
+    "agents": [],
+    "plan": [],
+    "missing_info": [
+     "order_id"
+    ],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "tai nghe gaming"
+    },
+    "reply": "Rất tiếc vì tai nghe gaming của bạn bị mất tiếng một bên. Để kiểm tra điều kiện bảo hành và tạo phiếu bảo hành, bạn vui lòng cung cấp mã đơn hàng đã mua sản phẩm này nhé."
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 3156.4,
+   "cost_usd": 0.006356,
+   "error": null
+  },
+  {
+   "id": "S28.2",
+   "src": "eval_set",
+   "kind": "state",
+   "msg": "đơn DH1010 nhé",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện bảo hành cho tai nghe gaming bị mất tiếng một bên thuộc đơn DH1010; nếu đủ điều kiện thì tạo phiếu bảo hành và hướng dẫn khách các bước tiếp theo."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1010",
+     "phone": "",
+     "product": "tai nghe gaming"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2755.6,
+   "cost_usd": 0.004808,
+   "error": null
+  },
+  {
+   "id": "S29.1",
+   "src": "eval_set",
+   "kind": "policy",
+   "msg": "Giao hàng nhanh mất mấy ngày, phí bao nhiêu?",
+   "gold": {
+    "intent": "policy_question",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "policy_question",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Cung cấp chính sách vận chuyển: thời gian giao hàng nhanh (số ngày) và phí giao hàng nhanh."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2148.9,
+   "cost_usd": 0.003128,
+   "error": null
+  },
+  {
+   "id": "S30.1",
+   "src": "eval_set",
+   "kind": "multi",
+   "msg": "Đơn DH1002 mình đổi địa chỉ nhận hàng được không?",
+   "gold": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và tình hình vận chuyển của đơn DH1002 để xác định đơn đã được giao cho đơn vị vận chuyển chưa và còn có thể đổi địa chỉ nhận hàng hay không."
+     },
+     {
+      "agent": "policy",
+      "task": "Cung cấp chính sách vận chuyển về việc thay đổi địa chỉ nhận hàng sau khi đặt (điều kiện, thời điểm được phép, phí phát sinh nếu có) áp dụng cho đơn DH1002."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1002",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 4887.4,
+   "cost_usd": 0.009172,
+   "error": null
+  },
+  {
+   "id": "S31.1",
+   "src": "eval_set",
+   "kind": "product",
+   "msg": "Laptop gaming nào dưới 25 triệu còn hàng?",
+   "gold": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "product",
+      "task": "Tìm các laptop gaming có giá dưới 25 triệu đồng và còn hàng trong kho; liệt kê tên, giá, thông số chính (CPU, GPU, RAM, màn hình) và tình trạng tồn kho."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "laptop gaming dưới 25 triệu"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2266.2,
+   "cost_usd": 0.004108,
+   "error": null
+  },
+  {
+   "id": "S32.1",
+   "src": "eval_set",
+   "kind": "product",
+   "msg": "Màn hình Nova View 27 cắm một dây USB-C vào Nova Air 14 vừa xuất hình vừa sạc được không?",
+   "gold": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "product",
+      "task": "Kiểm tra thông số màn hình Nova View 27 (cổng USB-C có hỗ trợ DisplayPort Alt Mode và Power Delivery không, công suất sạc bao nhiêu W) và laptop Nova Air 14 (cổng USB-C có hỗ trợ xuất hình và nhận sạc qua USB-C không, công suất yêu cầu). Trả lời khách: cắm một dây USB-C từ Nova View 27 vào Nova Air 14 có vừa xuất hình vừa sạc được không, kèm lưu ý về loại cáp cần dùng."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "Nova View 27, Nova Air 14"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 3294.8,
+   "cost_usd": 0.006648,
+   "error": null
+  },
+  {
+   "id": "T0",
+   "src": "test",
+   "kind": "in_state",
+   "msg": "nó còn bảo hành không?",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra tình trạng và điều kiện bảo hành của sản phẩm Pulse Watch thuộc đơn DH2976 (đơn đã giao), thông báo thời hạn bảo hành còn lại cho khách."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH2976",
+     "phone": "",
+     "product": "Pulse Watch"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2307.6,
+   "cost_usd": 0.00426,
+   "error": null
+  },
+  {
+   "id": "T1",
+   "src": "test",
+   "kind": "in_state",
+   "msg": "nó còn bảo hành không?",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "policy_question",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra thời hạn và điều kiện bảo hành còn hiệu lực của Loa bluetooth SoundMax Go thuộc đơn DH3996 (đã giao), trả lời khách sản phẩm còn bảo hành hay không"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH3996",
+     "phone": "",
+     "product": "Loa bluetooth SoundMax Go"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": false,
+   "json_valid": true,
+   "latency_ms": 4246.8,
+   "cost_usd": 0.007392,
+   "error": null
+  },
+  {
+   "id": "T2",
+   "src": "test",
+   "kind": "single",
+   "msg": "Tư vấn giúp mình chuột tầm 15tr",
+   "gold": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "product",
+      "task": "Tư vấn chuột máy tính trong tầm giá khoảng 15 triệu đồng. Mức giá này cao bất thường với chuột, nên xác nhận lại ngân sách với khách (có thể là 1,5 triệu). Gợi ý vài mẫu phù hợp kèm thông số, giá và tình trạng tồn kho."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "chuột"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 3428.5,
+   "cost_usd": 0.005576,
+   "error": null
+  },
+  {
+   "id": "T3",
+   "src": "test",
+   "kind": "pending",
+   "msg": "của mình là DH4958",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện bảo hành và tạo phiếu bảo hành cho tai nghe thuộc đơn DH4958, lỗi: không lên nguồn."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH4958",
+     "phone": "",
+     "product": "tai nghe"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 1733.1,
+   "cost_usd": 0.00398,
+   "error": null
+  },
+  {
+   "id": "T4",
+   "src": "test",
+   "kind": "in_state",
+   "msg": "Huỷ luôn đơn đó giúp mình",
+   "gold": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Kiểm tra trạng thái và yêu cầu huỷ đơn DH3028 (sản phẩm Nova Tab). Lưu ý đơn đã giao nên có thể không huỷ được; nếu không huỷ được thì thông báo rõ cho khách."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH3028",
+     "phone": "",
+     "product": "Nova Tab"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2510.4,
+   "cost_usd": 0.004444,
+   "error": null
+  },
+  {
+   "id": "T5",
+   "src": "test",
+   "kind": "in_state",
+   "msg": "trả hàng được không?",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện đổi trả cho đơn DH9780 (Tai nghe không dây SoundMax Pro, đã giao) và hướng dẫn/tạo phiếu trả hàng nếu đủ điều kiện."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH9780",
+     "phone": "",
+     "product": "Tai nghe không dây SoundMax Pro"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2415.2,
+   "cost_usd": 0.004488,
+   "error": null
+  },
+  {
+   "id": "T6",
+   "src": "test",
+   "kind": "single",
+   "msg": "Nova Tab dùng với Chuột không dây Vortex M3 được không?",
+   "gold": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "product",
+      "task": "Kiểm tra khả năng tương thích giữa máy tính bảng Nova Tab và Chuột không dây Vortex M3 (kết nối Bluetooth/USB receiver, hệ điều hành hỗ trợ) và hướng dẫn cách kết nối nếu dùng được."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "Nova Tab; Chuột không dây Vortex M3"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2324.2,
+   "cost_usd": 0.00458,
+   "error": null
+  },
+  {
+   "id": "T7",
+   "src": "test",
+   "kind": "single",
+   "msg": "Điện thoại Lumi X12 đơn DH5342 bị loạn cảm ứng, đổi giúp mình cái mới",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện đổi mới điện thoại Lumi X12 thuộc đơn DH5342 do lỗi loạn cảm ứng (lỗi phần cứng). Nếu đủ điều kiện thì tạo phiếu đổi trả (đổi máy mới); nếu đã quá hạn đổi trả thì hướng dẫn và tạo phiếu bảo hành."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH5342",
+     "phone": "",
+     "product": "Lumi X12"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 4213.7,
+   "cost_usd": 0.007816,
+   "error": null
+  },
+  {
+   "id": "T8",
+   "src": "test",
+   "kind": "multi",
+   "msg": "don DH6679 minh doi dia chi nhan duoc khong?",
+   "gold": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và tình trạng vận chuyển của đơn DH6679 để xác định khách còn đổi được địa chỉ nhận hàng không; nếu đơn chưa giao cho đơn vị vận chuyển thì hướng dẫn hoặc hỗ trợ cập nhật địa chỉ mới."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH6679",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": false,
+   "intent_ok": false,
+   "json_valid": true,
+   "latency_ms": 4387.7,
+   "cost_usd": 0.008328,
+   "error": null
+  },
+  {
+   "id": "T9",
+   "src": "test",
+   "kind": "multi",
+   "msg": "đơn DH5623 mình đổi địa chỉ nhận được không?",
+   "gold": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và tình trạng vận chuyển của đơn DH5623, kiểm tra xem đơn còn có thể đổi địa chỉ nhận hàng không (chưa giao cho đơn vị vận chuyển) và hướng dẫn khách cách cập nhật địa chỉ mới."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH5623",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": false,
+   "intent_ok": false,
+   "json_valid": true,
+   "latency_ms": 3673.9,
+   "cost_usd": 0.006456,
+   "error": null
+  },
+  {
+   "id": "T10",
+   "src": "test",
+   "kind": "pending",
+   "msg": "DH2362 ạ",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện bảo hành cho đơn DH2362 (tai nghe bị loạn cảm ứng) và tạo phiếu bảo hành nếu đủ điều kiện."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH2362",
+     "phone": "",
+     "product": "tai nghe"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2746.4,
+   "cost_usd": 0.004148,
+   "error": null
+  },
+  {
+   "id": "T11",
+   "src": "test",
+   "kind": "single",
+   "msg": "Mình không muốn mua nữa, huỷ đơn DH3873",
+   "gold": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Huỷ đơn hàng DH3873 theo yêu cầu khách (khách không muốn mua nữa); kiểm tra trạng thái đơn xem còn huỷ được không và thông báo kết quả."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH3873",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2320.3,
+   "cost_usd": 0.003692,
+   "error": null
+  },
+  {
+   "id": "T12",
+   "src": "test",
+   "kind": "single",
+   "msg": "kiểm tra giúp mình đơn DH3401",
+   "gold": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và tình hình vận chuyển của đơn hàng DH3401"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH3401",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 1743.1,
+   "cost_usd": 0.002848,
+   "error": null
+  },
+  {
+   "id": "T13",
+   "src": "test",
+   "kind": "pending",
+   "msg": "minh khong nho ma don",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [],
+    "missing": true
+   },
+   "pred": {
+    "intent": "warranty_claim",
+    "agents": [],
+    "plan": [],
+    "missing_info": [
+     "order_id"
+    ],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "tai nghe"
+    },
+    "reply": "Không sao bạn nhé! Bạn có thể tìm mã đơn (dạng DHxxxx) trong tin nhắn SMS hoặc email xác nhận đặt hàng, hoặc trong mục Lịch sử đơn hàng trên tài khoản TechViet. Nếu vẫn không tìm được, bạn gửi giúp mình số điện thoại đã dùng khi đặt hàng để mình tra cứu đơn và hỗ trợ bảo hành tai nghe cho bạn nhé."
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 4587.4,
+   "cost_usd": 0.009928,
+   "error": null
+  },
+  {
+   "id": "T14",
+   "src": "test",
+   "kind": "single",
+   "msg": "Mình không muốn mua nữa, huỷ đơn DH6476",
+   "gold": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Kiểm tra trạng thái và tiến hành huỷ đơn DH6476 theo yêu cầu của khách (khách không muốn mua nữa)"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH6476",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2170.9,
+   "cost_usd": 0.003332,
+   "error": null
+  },
+  {
+   "id": "T15",
+   "src": "test",
+   "kind": "pending",
+   "msg": "DH5981 ạ",
+   "gold": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và tình hình vận chuyển của đơn hàng DH5981"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH5981",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2210.1,
+   "cost_usd": 0.00318,
+   "error": null
+  },
+  {
+   "id": "T16",
+   "src": "test",
+   "kind": "multi",
+   "msg": "đơn DH7098 mình đổi địa chỉ nhận được không?",
+   "gold": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và vận chuyển của đơn DH7098 để xác định đơn còn đổi được địa chỉ nhận hàng không (chưa bàn giao vận chuyển), và hướng dẫn khách cách đổi địa chỉ nếu được."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH7098",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": false,
+   "intent_ok": false,
+   "json_valid": true,
+   "latency_ms": 3402.8,
+   "cost_usd": 0.006336,
+   "error": null
+  },
+  {
+   "id": "T17",
+   "src": "test",
+   "kind": "single",
+   "msg": "cho mình hủy đơn DH1910 nhé",
+   "gold": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Kiểm tra trạng thái và thực hiện huỷ đơn hàng DH1910 theo yêu cầu của khách"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1910",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2060.4,
+   "cost_usd": 0.003108,
+   "error": null
+  },
+  {
+   "id": "T18",
+   "src": "test",
+   "kind": "multi",
+   "msg": "Đơn DH6458 giao chưa, nếu chưa thì phí ship nhanh bao nhiêu?",
+   "gold": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái giao hàng của đơn DH6458"
+     },
+     {
+      "agent": "policy",
+      "task": "Cung cấp thông tin phí giao hàng nhanh theo chính sách vận chuyển (áp dụng nếu đơn DH6458 chưa giao)"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH6458",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2246.6,
+   "cost_usd": 0.004192,
+   "error": null
+  },
+  {
+   "id": "T19",
+   "src": "test",
+   "kind": "missing",
+   "msg": "Bàn phím cơ Vortex K75 mới mua bị sạc không vào, muốn đổi cái khác",
+   "gold": {
+    "intent": "return_request",
+    "agents": [],
+    "missing": true
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [],
+    "plan": [],
+    "missing_info": [
+     "order_id"
+    ],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "Vortex K75"
+    },
+    "reply": "Rất tiếc vì bàn phím Vortex K75 của bạn bị lỗi không sạc được. Để TechViet kiểm tra điều kiện và hỗ trợ đổi sản phẩm mới, bạn vui lòng cho mình xin mã đơn hàng nhé."
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 3261.8,
+   "cost_usd": 0.005588,
+   "error": null
+  },
+  {
+   "id": "T20",
+   "src": "test",
+   "kind": "follow_product",
+   "msg": "Máy đó có NFC không?",
+   "gold": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "product",
+      "task": "Kiểm tra thông số Máy tính bảng Nova Tab S xem có hỗ trợ NFC không và trả lời khách"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "Máy tính bảng Nova Tab S"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 1734.0,
+   "cost_usd": 0.003692,
+   "error": null
+  },
+  {
+   "id": "T21",
+   "src": "test",
+   "kind": "follow_product",
+   "msg": "Máy đó có màn OLED không?",
+   "gold": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "product",
+      "task": "Khách hỏi 'máy đó' có màn hình OLED không, theo ngữ cảnh là chuột M3. Kiểm tra thông số chuột M3 xem có màn hình OLED không; nếu không có, nói rõ và hỏi lại khách có đang muốn hỏi về sản phẩm khác không."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "chuột M3"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 3667.0,
+   "cost_usd": 0.006308,
+   "error": null
+  },
+  {
+   "id": "T22",
+   "src": "test",
+   "kind": "pending",
+   "msg": "mã đơn DH3180",
+   "gold": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Kiểm tra trạng thái đơn DH3180 và tiến hành huỷ đơn theo yêu cầu của khách nếu đơn còn đủ điều kiện huỷ."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH3180",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2371.5,
+   "cost_usd": 0.0038,
+   "error": null
+  },
+  {
+   "id": "T23",
+   "src": "test",
+   "kind": "pending",
+   "msg": "Mã đơn DH9027",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện đổi trả cho đơn DH9027, sản phẩm Tai nghe không dây SoundMax Pro bị lỗi tự tắt nguồn; khách muốn đổi sản phẩm khác. Nếu đủ điều kiện thì tạo phiếu đổi trả."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH9027",
+     "phone": "",
+     "product": "Tai nghe không dây SoundMax Pro"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 3609.9,
+   "cost_usd": 0.005268,
+   "error": null
+  },
+  {
+   "id": "T24",
+   "src": "test",
+   "kind": "pending",
+   "msg": "Mã đơn DH5018",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện bảo hành cho tai nghe thuộc đơn DH5018 (lỗi không lên nguồn) và tạo phiếu bảo hành nếu đủ điều kiện."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH5018",
+     "phone": "",
+     "product": "tai nghe"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2649.7,
+   "cost_usd": 0.004228,
+   "error": null
+  },
+  {
+   "id": "T25",
+   "src": "test",
+   "kind": "single",
+   "msg": "minh khong muon mua nua, huy don DH7171",
+   "gold": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Huỷ đơn hàng DH7171 theo yêu cầu của khách (khách không muốn mua nữa); kiểm tra trạng thái đơn có cho phép huỷ không và thông báo kết quả."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH7171",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2999.3,
+   "cost_usd": 0.003688,
+   "error": null
+  },
+  {
+   "id": "T26",
+   "src": "test",
+   "kind": "pending",
+   "msg": "mã đơn DH1592",
+   "gold": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và tình trạng vận chuyển của đơn DH1592, giải thích vì sao hàng chưa tới và dự kiến thời gian giao."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1592",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2180.2,
+   "cost_usd": 0.003756,
+   "error": null
+  },
+  {
+   "id": "T27",
+   "src": "test",
+   "kind": "in_state",
+   "msg": "Nó còn bảo hành không?",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra tình trạng/thời hạn bảo hành của Laptop Nova Air 14 thuộc đơn DH4035 (đã giao) và thông báo cho khách còn bảo hành hay không."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH4035",
+     "phone": "",
+     "product": "Laptop Nova Air 14"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2134.7,
+   "cost_usd": 0.00422,
+   "error": null
+  },
+  {
+   "id": "T28",
+   "src": "test",
+   "kind": "single",
+   "msg": "Tai nghe True Wireless SoundMax Buds 2 đơn DH7842 bị tự tắt nguồn, còn bảo hành không?",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện bảo hành cho tai nghe True Wireless SoundMax Buds 2 thuộc đơn DH7842 (lỗi tự tắt nguồn); nếu còn bảo hành thì hướng dẫn và tạo phiếu bảo hành."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH7842",
+     "phone": "",
+     "product": "True Wireless SoundMax Buds 2"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2545.4,
+   "cost_usd": 0.00472,
+   "error": null
+  },
+  {
+   "id": "T29",
+   "src": "test",
+   "kind": "missing",
+   "msg": "tai nghe minh bi sac khong vao, gui bao hanh duoc khong",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [],
+    "missing": true
+   },
+   "pred": {
+    "intent": "warranty_claim",
+    "agents": [],
+    "plan": [],
+    "missing_info": [
+     "order_id"
+    ],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "tai nghe"
+    },
+    "reply": "Dạ TechViet rất tiếc về sự cố tai nghe sạc không vào ạ. Để kiểm tra điều kiện và tạo phiếu bảo hành, anh/chị vui lòng cung cấp mã đơn hàng đã mua tai nghe giúp em nhé."
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2882.1,
+   "cost_usd": 0.004084,
+   "error": null
+  },
+  {
+   "id": "T30",
+   "src": "test",
+   "kind": "single",
+   "msg": "đơn DH9021 mình đổi ý, muốn trả hàng, còn nguyên seal",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện đổi trả cho đơn DH9021 (khách đổi ý, sản phẩm còn nguyên seal) và tạo phiếu trả hàng nếu đủ điều kiện"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH9021",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2240.0,
+   "cost_usd": 0.003788,
+   "error": null
+  },
+  {
+   "id": "T31",
+   "src": "test",
+   "kind": "multi",
+   "msg": "Đơn DH5911 bao giờ tới? với lại Sạc nhanh GaN 65W PowerCube có kết nối 2 thiết bị không?",
+   "gold": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái vận chuyển và thời gian dự kiến giao của đơn DH5911"
+     },
+     {
+      "agent": "product",
+      "task": "Kiểm tra thông số Sạc nhanh GaN 65W PowerCube: có hỗ trợ sạc/kết nối đồng thời 2 thiết bị không (số cổng, phân bổ công suất)"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH5911",
+     "phone": "",
+     "product": "Sạc nhanh GaN 65W PowerCube"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 3122.4,
+   "cost_usd": 0.005252,
+   "error": null
+  },
+  {
+   "id": "T32",
+   "src": "test",
+   "kind": "pending",
+   "msg": "mã là DH2312 shop ơi",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Khách muốn hoàn tiền cho đơn DH2312: kiểm tra điều kiện đổi trả/hoàn tiền của đơn DH2312 và tạo phiếu đổi trả nếu đủ điều kiện."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH2312",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2461.8,
+   "cost_usd": 0.004128,
+   "error": null
+  },
+  {
+   "id": "T33",
+   "src": "test",
+   "kind": "in_state",
+   "msg": "trả hàng được không?",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện trả hàng cho đơn DH3394 (Laptop Nova Air 14, đã giao) theo chính sách đổi trả; nếu đủ điều kiện, hướng dẫn khách và tạo phiếu đổi trả."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH3394",
+     "phone": "",
+     "product": "Laptop Nova Air 14"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 3228.8,
+   "cost_usd": 0.005364,
+   "error": null
+  },
+  {
+   "id": "T34",
+   "src": "test",
+   "kind": "multi",
+   "msg": "đơn DH6132 bao giờ tới? với lại Máy tính bảng Nova Tab S có sạc nhanh không?",
+   "gold": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và thời gian giao dự kiến của đơn DH6132"
+     },
+     {
+      "agent": "product",
+      "task": "Kiểm tra thông số Máy tính bảng Nova Tab S có hỗ trợ sạc nhanh không (công suất sạc)"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH6132",
+     "phone": "",
+     "product": "Máy tính bảng Nova Tab S"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2437.5,
+   "cost_usd": 0.004492,
+   "error": null
+  },
+  {
+   "id": "T35",
+   "src": "test",
+   "kind": "multi",
+   "msg": "đơn DH5703 mình đổi địa chỉ nhận được không?",
+   "gold": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và tình trạng vận chuyển của đơn DH5703, kiểm tra xem đơn còn có thể thay đổi địa chỉ nhận hàng không (chưa xuất kho/chưa giao cho đơn vị vận chuyển) và hướng dẫn khách cách đổi địa chỉ."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH5703",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": false,
+   "intent_ok": false,
+   "json_valid": true,
+   "latency_ms": 3864.3,
+   "cost_usd": 0.006696,
+   "error": null
+  },
+  {
+   "id": "T36",
+   "src": "test",
+   "kind": "single",
+   "msg": "đơn DH5679 còn hạn bảo hành không vậy",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra thời hạn và điều kiện bảo hành của đơn DH5679 (dựa trên ngày mua/giao và sản phẩm trong đơn), thông báo cho khách đơn còn hạn bảo hành hay không. Chưa tạo phiếu bảo hành trừ khi khách yêu cầu."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH5679",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 5356.7,
+   "cost_usd": 0.009084,
+   "error": null
+  },
+  {
+   "id": "T37",
+   "src": "test",
+   "kind": "pending",
+   "msg": "Mã đơn DH3860",
+   "gold": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và tình hình vận chuyển của đơn hàng DH3860"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH3860",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 1721.9,
+   "cost_usd": 0.003216,
+   "error": null
+  },
+  {
+   "id": "T38",
+   "src": "test",
+   "kind": "pending",
+   "msg": "mã đơn DH7292",
+   "gold": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Kiểm tra trạng thái đơn DH7292 và thực hiện huỷ đơn theo yêu cầu của khách (khách đặt nhầm)."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH7292",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2334.9,
+   "cost_usd": 0.00366,
+   "error": null
+  },
+  {
+   "id": "T39",
+   "src": "test",
+   "kind": "multi",
+   "msg": "kiem tra don DH8421 va tu van them tai nghe cho di du lich",
+   "gold": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và thông tin vận chuyển của đơn hàng DH8421"
+     },
+     {
+      "agent": "product",
+      "task": "Tư vấn tai nghe phù hợp để đi du lịch (gọn nhẹ, chống ồn, pin lâu), kèm giá và tình trạng tồn kho"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH8421",
+     "phone": "",
+     "product": "tai nghe"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2621.6,
+   "cost_usd": 0.004504,
+   "error": null
+  },
+  {
+   "id": "T40",
+   "src": "test",
+   "kind": "in_state",
+   "msg": "minh muon tra lai don do",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện đổi trả cho đơn DH4525 (Laptop Vortex Strike 15, đã giao) và tạo phiếu trả hàng nếu đủ điều kiện."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH4525",
+     "phone": "",
+     "product": "Laptop Vortex Strike 15"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2437.0,
+   "cost_usd": 0.00416,
+   "error": null
+  },
+  {
+   "id": "T41",
+   "src": "test",
+   "kind": "single",
+   "msg": "Huỷ đơn DH9841 giúp mình",
+   "gold": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Kiểm tra trạng thái và thực hiện huỷ đơn hàng DH9841 theo yêu cầu của khách"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH9841",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 1754.1,
+   "cost_usd": 0.003108,
+   "error": null
+  },
+  {
+   "id": "T42",
+   "src": "test",
+   "kind": "single",
+   "msg": "Mình muốn huỷ đơn DH3709 được không",
+   "gold": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "cancel_order",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Kiểm tra trạng thái đơn DH3709 và thực hiện huỷ đơn nếu đủ điều kiện, thông báo kết quả cho khách"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH3709",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2185.8,
+   "cost_usd": 0.003376,
+   "error": null
+  },
+  {
+   "id": "T43",
+   "src": "test",
+   "kind": "missing",
+   "msg": "Check đơn giúp mình với",
+   "gold": {
+    "intent": "order_status",
+    "agents": [],
+    "missing": true
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [],
+    "plan": [],
+    "missing_info": [
+     "order_id"
+    ],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": ""
+    },
+    "reply": "Dạ, bạn vui lòng cho mình xin mã đơn hàng (hoặc số điện thoại đặt hàng) để mình kiểm tra giúp bạn nhé!"
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2162.8,
+   "cost_usd": 0.003116,
+   "error": null
+  },
+  {
+   "id": "T44",
+   "src": "test",
+   "kind": "in_state",
+   "msg": "Khi nào giao tới vậy",
+   "gold": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái vận chuyển và thời gian giao hàng của đơn DH5407 (Điện thoại Lumi A5). Lưu ý lượt trước đơn được báo là đã giao, cần xác nhận lại thời điểm giao thực tế và giải thích cho khách nếu khách chưa nhận được hàng."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH5407",
+     "phone": "",
+     "product": "Điện thoại Lumi A5"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2800.5,
+   "cost_usd": 0.006424,
+   "error": null
+  },
+  {
+   "id": "T45",
+   "src": "test",
+   "kind": "in_state",
+   "msg": "Nó còn bảo hành không?",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra tình trạng và điều kiện bảo hành của sản phẩm Lumi X12 thuộc đơn DH1063 (đơn đã giao), thông báo thời hạn bảo hành còn lại cho khách."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH1063",
+     "phone": "",
+     "product": "Lumi X12"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2474.7,
+   "cost_usd": 0.00424,
+   "error": null
+  },
+  {
+   "id": "T46",
+   "src": "test",
+   "kind": "multi",
+   "msg": "Đơn DH2822 mình đổi địa chỉ nhận được không?",
+   "gold": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái đơn DH2822 và kiểm tra xem đơn còn có thể đổi địa chỉ nhận hàng hay không (đơn đã giao cho đơn vị vận chuyển chưa); hướng dẫn khách cách cập nhật địa chỉ nếu được."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH2822",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": false,
+   "intent_ok": false,
+   "json_valid": true,
+   "latency_ms": 3120.1,
+   "cost_usd": 0.00608,
+   "error": null
+  },
+  {
+   "id": "T47",
+   "src": "test",
+   "kind": "missing",
+   "msg": "minh muon tra hang",
+   "gold": {
+    "intent": "return_request",
+    "agents": [],
+    "missing": true
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [],
+    "plan": [],
+    "missing_info": [
+     "order_id"
+    ],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": ""
+    },
+    "reply": "Dạ, TechViet hỗ trợ bạn trả hàng ạ. Bạn vui lòng cho mình xin mã đơn hàng để kiểm tra điều kiện đổi trả nhé."
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2366.5,
+   "cost_usd": 0.003244,
+   "error": null
+  },
+  {
+   "id": "T48",
+   "src": "test",
+   "kind": "in_state",
+   "msg": "sản phẩm đó bị liệt phím, làm phiếu bảo hành giúp",
+   "gold": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "warranty_claim",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện bảo hành và tạo phiếu bảo hành cho sản phẩm màn hình 27 inch thuộc đơn DH4933 (đã giao). Lỗi khách báo: liệt phím (có thể là nút bấm trên màn hình; xác nhận lại với khách nếu cần)."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH4933",
+     "phone": "",
+     "product": "màn hình 27 inch"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 3699.6,
+   "cost_usd": 0.006744,
+   "error": null
+  },
+  {
+   "id": "T49",
+   "src": "test",
+   "kind": "single",
+   "msg": "mình muốn trả Pulse Watch trong đơn DH8390",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện đổi trả sản phẩm Pulse Watch trong đơn DH8390 và tạo phiếu trả hàng nếu đủ điều kiện"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH8390",
+     "phone": "",
+     "product": "Pulse Watch"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2298.5,
+   "cost_usd": 0.003688,
+   "error": null
+  },
+  {
+   "id": "T50",
+   "src": "test",
+   "kind": "single",
+   "msg": "bao giờ mình nhận được đơn DH8668?",
+   "gold": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và thời gian giao hàng dự kiến của đơn DH8668"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH8668",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 1596.1,
+   "cost_usd": 0.002872,
+   "error": null
+  },
+  {
+   "id": "T51",
+   "src": "test",
+   "kind": "multi",
+   "msg": "Dong ho thong minh Pulse Watch 3 gia bao nhieu, co tra gop khong?",
+   "gold": {
+    "intent": "multi",
+    "agents": [
+     "product",
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "multi",
+    "agents": [
+     "product",
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "product",
+      "task": "Tra cứu giá bán hiện tại và tình trạng tồn kho của đồng hồ thông minh Pulse Watch 3."
+     },
+     {
+      "agent": "policy",
+      "task": "Cung cấp chính sách trả góp (điều kiện, kỳ hạn, lãi suất, phương thức) áp dụng cho đồng hồ thông minh Pulse Watch 3."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "Pulse Watch 3"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 3012.8,
+   "cost_usd": 0.005436,
+   "error": null
+  },
+  {
+   "id": "T52",
+   "src": "test",
+   "kind": "multi",
+   "msg": "Đơn DH6970 bao giờ tới? với lại Laptop Nova Creator 16 có màn OLED không?",
+   "gold": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "multi",
+    "agents": [
+     "order",
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái và thời gian giao dự kiến của đơn DH6970"
+     },
+     {
+      "agent": "product",
+      "task": "Kiểm tra thông số màn hình của Laptop Nova Creator 16, xác nhận có phải màn OLED không"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH6970",
+     "phone": "",
+     "product": "Laptop Nova Creator 16"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2348.9,
+   "cost_usd": 0.00428,
+   "error": null
+  },
+  {
+   "id": "T53",
+   "src": "test",
+   "kind": "in_state",
+   "msg": "khi nào giao tới vậy",
+   "gold": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái vận chuyển và thời gian giao hàng của đơn DH8761 (Laptop Nova Air 14). Lưu ý: trước đó hệ thống báo đơn đã giao, cần xác nhận lại ngày giao thực tế."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH8761",
+     "phone": "",
+     "product": "Laptop Nova Air 14"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2474.2,
+   "cost_usd": 0.005696,
+   "error": null
+  },
+  {
+   "id": "T54",
+   "src": "test",
+   "kind": "single",
+   "msg": "Mình đặt bằng số 0723039665, kiểm tra đơn giúp",
+   "gold": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái các đơn hàng đặt bằng số điện thoại 0723039665 và báo tình trạng vận chuyển cho khách"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "0723039665",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 1746.1,
+   "cost_usd": 0.003304,
+   "error": null
+  },
+  {
+   "id": "T55",
+   "src": "test",
+   "kind": "single",
+   "msg": "hàng đơn DH7238 bị lỗi, mình muốn hoàn tiền",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện đổi trả/hoàn tiền cho đơn DH7238 do sản phẩm bị lỗi; nếu đủ điều kiện thì tạo phiếu đổi trả hoàn tiền cho đơn DH7238."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH7238",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 2537.1,
+   "cost_usd": 0.004076,
+   "error": null
+  },
+  {
+   "id": "T56",
+   "src": "test",
+   "kind": "in_state",
+   "msg": "mình muốn trả lại đơn đó",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện đổi trả cho đơn DH8942 (Máy tính bảng Nova Tab S, đã giao) và tạo phiếu trả hàng nếu đủ điều kiện."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH8942",
+     "phone": "",
+     "product": "Máy tính bảng Nova Tab S"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 1990.3,
+   "cost_usd": 0.004264,
+   "error": null
+  },
+  {
+   "id": "T57",
+   "src": "test",
+   "kind": "in_state",
+   "msg": "Khi nào giao tới vậy",
+   "gold": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "order_status",
+    "agents": [
+     "order"
+    ],
+    "plan": [
+     {
+      "agent": "order",
+      "task": "Tra cứu trạng thái vận chuyển và thời gian giao của đơn DH5264 (Sạc nhanh GaN 65W PowerCube). Hệ thống trước đó ghi nhận đơn đã giao; xác nhận lại ngày giao thực tế và thông tin người nhận để khách kiểm tra."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH5264",
+     "phone": "",
+     "product": "Sạc nhanh GaN 65W PowerCube"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 3716.1,
+   "cost_usd": 0.006612,
+   "error": null
+  },
+  {
+   "id": "T58",
+   "src": "test",
+   "kind": "switch",
+   "msg": "gợi ý đồng hồ thông minh cho văn phòng, ngân sách 15tr",
+   "gold": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "product_inquiry",
+    "agents": [
+     "product"
+    ],
+    "plan": [
+     {
+      "agent": "product",
+      "task": "Gợi ý các mẫu đồng hồ thông minh phù hợp dùng cho môi trường văn phòng (thiết kế thanh lịch, thông báo, theo dõi sức khỏe, pin tốt), ngân sách tối đa 15 triệu đồng; nêu thông số chính, giá và tình trạng tồn kho."
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "",
+     "phone": "",
+     "product": "đồng hồ thông minh"
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 4109.9,
+   "cost_usd": 0.00702,
+   "error": null
+  },
+  {
+   "id": "T59",
+   "src": "test",
+   "kind": "single",
+   "msg": "don DH6227 minh doi y, muon tra hang, con nguyen seal",
+   "gold": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "missing": false
+   },
+   "pred": {
+    "intent": "return_request",
+    "agents": [
+     "policy"
+    ],
+    "plan": [
+     {
+      "agent": "policy",
+      "task": "Kiểm tra điều kiện đổi trả cho đơn DH6227 (khách đổi ý, sản phẩm còn nguyên seal) và tạo phiếu trả hàng nếu đủ điều kiện"
+     }
+    ],
+    "missing_info": [],
+    "entities": {
+     "order_id": "DH6227",
+     "phone": "",
+     "product": ""
+    },
+    "reply": ""
+   },
+   "correct": true,
+   "intent_ok": true,
+   "json_valid": true,
+   "latency_ms": 1802.0,
+   "cost_usd": 0.00376,
+   "error": null
+  }
+ ],
+ "summary": {
+  "n": 97,
+  "routing_acc": 0.9485,
+  "intent_acc": 0.9278,
+  "json_valid": 1.0,
+  "routing_acc_eval_set": 1.0,
+  "routing_acc_test": 0.9167,
+  "latency_ms_mean": 2716.0,
+  "latency_ms_p95": 4275.0,
+  "cost_per_1k_usd": 4.7424,
+  "errors": 0,
+  "by_kind": {
+   "chitchat": {
+    "n": 1,
+    "acc": 1.0
+   },
+   "follow_product": {
+    "n": 2,
+    "acc": 1.0
+   },
+   "in_state": {
+    "n": 13,
+    "acc": 1.0
+   },
+   "missing": {
+    "n": 4,
+    "acc": 1.0
+   },
+   "multi": {
+    "n": 14,
+    "acc": 0.6429
+   },
+   "order": {
+    "n": 4,
+    "acc": 1.0
+   },
+   "out_of_scope": {
+    "n": 1,
+    "acc": 1.0
+   },
+   "pending": {
+    "n": 11,
+    "acc": 1.0
+   },
+   "policy": {
+    "n": 12,
+    "acc": 1.0
+   },
+   "product": {
+    "n": 6,
+    "acc": 1.0
+   },
+   "single": {
+    "n": 18,
+    "acc": 1.0
+   },
+   "state": {
+    "n": 10,
+    "acc": 1.0
+   },
+   "switch": {
+    "n": 1,
+    "acc": 1.0
+   }
+  }
+ }
+}

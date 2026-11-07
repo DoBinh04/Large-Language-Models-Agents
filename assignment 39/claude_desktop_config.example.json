@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "techviet-support": {
+      "command": "C:\\phase3\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "support.mcp_server"],
+      "cwd": "C:\\phase3\\assignment 39",
+      "env": {"RAG_LIGHT": "1", "PYTHONPATH": "C:\\phase3\\assignment 39"}
+    }
+  }
+}

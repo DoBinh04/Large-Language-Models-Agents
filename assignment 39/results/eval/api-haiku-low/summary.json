@@ -1,0 +1,68 @@
+{
+ "config": "api-haiku-low",
+ "router": "api",
+ "router_llm": [
+  "claude-haiku-5-5",
+  "low"
+ ],
+ "agents": [
+  "claude-haiku-5-5",
+  "low"
+ ],
+ "overrides": null,
+ "n_scenarios": 32,
+ "n_turns": 37,
+ "task_success_rate": 0.875,
+ "routing_acc": 0.9189,
+ "intent_acc": 0.8919,
+ "tool_f1_micro": {
+  "precision": 0.5846,
+  "recall": 0.95,
+  "f1": 0.7238
+ },
+ "tool_f1_macro": 0.7552,
+ "latency_ms_mean": 6105.9,
+ "latency_ms_p50": 4342.3,
+ "latency_ms_p95": 11585.1,
+ "router_ms_mean": 1330.4,
+ "cost_total_usd": 0.0274,
+ "cost_per_scenario_usd": 0.00086,
+ "cost_per_success_usd": 0.00098,
+ "llm_calls_per_turn": 3.54,
+ "input_tokens": 86694,
+ "output_tokens": 33336,
+ "cache_read_tokens": 183938,
+ "errors": 0,
+ "judge_cost_usd": 0.23011,
+ "by_category": {
+  "chitchat": {
+   "n": 1,
+   "success": 1.0
+  },
+  "multi": {
+   "n": 3,
+   "success": 1.0
+  },
+  "order": {
+   "n": 4,
+   "success": 0.75
+  },
+  "out_of_scope": {
+   "n": 1,
+   "success": 1.0
+  },
+  "policy": {
+   "n": 12,
+   "success": 0.75
+  },
+  "product": {
+   "n": 6,
+   "success": 1.0
+  },
+  "state": {
+   "n": 5,
+   "success": 1.0
+  }
+ },
+ "tools_backend": "local"
+}

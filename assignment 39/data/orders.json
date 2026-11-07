@@ -1,0 +1,29 @@
+{
+  "_note": "Ngày 'hôm nay' của hệ thống cố định = 2026-10-29 (config trong support/tools.py: TODAY) để kết quả eval tái lập được.",
+  "orders": [
+    {"order_id": "DH1001", "phone": "0901234567", "customer": "Nguyễn Văn An", "status": "delivered", "order_date": "2026-10-10", "delivered_date": "2026-10-14",
+     "items": [{"product_id": "P001", "qty": 1, "price": 2490000}], "payment": "COD", "shipping": "Tiêu chuẩn", "tracking": "GHN-88812301"},
+    {"order_id": "DH1002", "phone": "0912345678", "customer": "Trần Thị Bình", "status": "shipping", "order_date": "2026-10-26", "delivered_date": null,
+     "items": [{"product_id": "P004", "qty": 1, "price": 18990000}, {"product_id": "P011", "qty": 1, "price": 590000}], "payment": "Thẻ tín dụng", "shipping": "Nhanh", "tracking": "GHN-88812345", "eta": "2026-10-30"},
+    {"order_id": "DH1003", "phone": "0987654321", "customer": "Lê Minh Châu", "status": "processing", "order_date": "2026-10-28", "delivered_date": null,
+     "items": [{"product_id": "P009", "qty": 1, "price": 3290000}], "payment": "Chuyển khoản", "shipping": "Tiêu chuẩn", "tracking": null, "eta": "2026-11-02"},
+    {"order_id": "DH1004", "phone": "0901234567", "customer": "Nguyễn Văn An", "status": "delivered", "order_date": "2026-08-02", "delivered_date": "2026-08-05",
+     "items": [{"product_id": "P007", "qty": 1, "price": 12990000}], "payment": "Trả góp 0%", "shipping": "Nhanh", "tracking": "GHN-77700123"},
+    {"order_id": "DH1005", "phone": "0933333333", "customer": "Phạm Quốc Dũng", "status": "delivered", "order_date": "2026-10-20", "delivered_date": "2026-10-24",
+     "items": [{"product_id": "P002", "qty": 1, "price": 1290000}, {"product_id": "P012", "qty": 1, "price": 450000}], "payment": "COD", "shipping": "Tiêu chuẩn", "tracking": "GHN-88812399"},
+    {"order_id": "DH1006", "phone": "0944444444", "customer": "Võ Thu Hà", "status": "cancelled", "order_date": "2026-10-15", "delivered_date": null,
+     "items": [{"product_id": "P010", "qty": 1, "price": 8990000}], "payment": "Thẻ tín dụng", "shipping": "Tiêu chuẩn", "tracking": null, "refund_status": "Đã hoàn tiền 2026-10-17"},
+    {"order_id": "DH1007", "phone": "0955555555", "customer": "Đặng Gia Huy", "status": "delivered", "order_date": "2025-09-01", "delivered_date": "2025-09-04",
+     "items": [{"product_id": "P006", "qty": 1, "price": 24490000}], "payment": "Chuyển khoản", "shipping": "Nhanh", "tracking": "GHN-55500111"},
+    {"order_id": "DH1008", "phone": "0966666666", "customer": "Bùi Khánh Linh", "status": "delivered", "order_date": "2026-10-01", "delivered_date": "2026-10-03",
+     "items": [{"product_id": "P013", "qty": 1, "price": 1890000}], "payment": "COD", "shipping": "Tiêu chuẩn", "tracking": "GHN-88800777"},
+    {"order_id": "DH1009", "phone": "0977777777", "customer": "Hoàng Mai", "status": "delivered", "order_date": "2026-10-22", "delivered_date": "2026-10-25",
+     "items": [{"product_id": "P015", "qty": 1, "price": 7490000}], "payment": "Thẻ tín dụng", "shipping": "Nhanh", "tracking": "GHN-88812420", "note": "Khách báo màn hình có điểm chết khi mở hộp"},
+    {"order_id": "DH1010", "phone": "0988888888", "customer": "Ngô Thanh Phong", "status": "returned", "order_date": "2026-09-20", "delivered_date": "2026-09-23",
+     "items": [{"product_id": "P003", "qty": 1, "price": 1690000}], "payment": "COD", "shipping": "Tiêu chuẩn", "tracking": "GHN-66600222", "refund_status": "Đã hoàn 1.690.000đ vào 2026-10-02"},
+    {"order_id": "DH1011", "phone": "0912345678", "customer": "Trần Thị Bình", "status": "delivered", "order_date": "2025-12-10", "delivered_date": "2025-12-12",
+     "items": [{"product_id": "P005", "qty": 1, "price": 32990000}], "payment": "Trả góp 0%", "shipping": "Nhanh", "tracking": "GHN-44400999"},
+    {"order_id": "DH1012", "phone": "0999999999", "customer": "Trịnh Quang Khải", "status": "delivered", "order_date": "2026-10-18", "delivered_date": "2026-10-21",
+     "items": [{"product_id": "P008", "qty": 2, "price": 4490000}], "payment": "COD", "shipping": "Tiêu chuẩn", "tracking": "GHN-88812377", "note": "Một máy đã kích hoạt, máy còn lại nguyên seal"}
+  ]
+}

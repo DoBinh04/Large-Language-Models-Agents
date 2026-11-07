@@ -1,0 +1,9 @@
+# Chỉ những gì API server cần (image Docker target "api"). Không có torch / trl / peft.
+anthropic>=1.0
+mcp>=1.10
+numpy>=1.24
+fastapi>=0.115
+uvicorn>=0.30
+pydantic>=2.7
+# RAG dense + reranker: build với --build-arg WITH_RAG_MODELS=1 (cài torch CPU + sentence-transformers).
+# Không có thì RAG tự lùi về BM25 (xem /health -> rag_mode).

@@ -1,0 +1,65 @@
+{
+ "config": "small-dpo-opus",
+ "router": "dpo",
+ "router_llm": null,
+ "agents": [
+  "claude-opus-5-5",
+  "medium"
+ ],
+ "overrides": null,
+ "n_scenarios": 32,
+ "n_turns": 37,
+ "task_success_rate": 0.7812,
+ "routing_acc": 0.973,
+ "intent_acc": 0.973,
+ "tool_f1_micro": {
+  "precision": 0.5833,
+  "recall": 0.875,
+  "f1": 0.7
+ },
+ "tool_f1_macro": 0.7022,
+ "latency_ms_mean": 9289.2,
+ "latency_ms_p50": 8920.4,
+ "latency_ms_p95": 17800.4,
+ "router_ms_mean": 2402.7,
+ "cost_total_usd": 0.75904,
+ "cost_per_scenario_usd": 0.02372,
+ "cost_per_success_usd": 0.03036,
+ "llm_calls_per_turn": 2.27,
+ "input_tokens": 68605,
+ "output_tokens": 21589,
+ "cache_read_tokens": 117542,
+ "errors": 0,
+ "judge_cost_usd": 0.23708,
+ "by_category": {
+  "chitchat": {
+   "n": 1,
+   "success": 1.0
+  },
+  "multi": {
+   "n": 3,
+   "success": 0.667
+  },
+  "order": {
+   "n": 4,
+   "success": 0.5
+  },
+  "out_of_scope": {
+   "n": 1,
+   "success": 1.0
+  },
+  "policy": {
+   "n": 12,
+   "success": 0.75
+  },
+  "product": {
+   "n": 6,
+   "success": 1.0
+  },
+  "state": {
+   "n": 5,
+   "success": 0.8
+  }
+ },
+ "tools_backend": "local"
+}

@@ -1,0 +1,68 @@
+{
+ "config": "api-sonnet-medium",
+ "router": "api",
+ "router_llm": [
+  "claude-sonnet-5-5",
+  "medium"
+ ],
+ "agents": [
+  "claude-sonnet-5-5",
+  "medium"
+ ],
+ "overrides": null,
+ "n_scenarios": 32,
+ "n_turns": 37,
+ "task_success_rate": 0.875,
+ "routing_acc": 1.0,
+ "intent_acc": 0.973,
+ "tool_f1_micro": {
+  "precision": 0.6,
+  "recall": 0.9,
+  "f1": 0.72
+ },
+ "tool_f1_macro": 0.7292,
+ "latency_ms_mean": 6867.7,
+ "latency_ms_p50": 6345.9,
+ "latency_ms_p95": 13624.3,
+ "router_ms_mean": 1795.9,
+ "cost_total_usd": 0.42563,
+ "cost_per_scenario_usd": 0.0133,
+ "cost_per_success_usd": 0.0152,
+ "llm_calls_per_turn": 3.24,
+ "input_tokens": 70330,
+ "output_tokens": 24182,
+ "cache_read_tokens": 168457,
+ "errors": 0,
+ "judge_cost_usd": 0.23036,
+ "by_category": {
+  "chitchat": {
+   "n": 1,
+   "success": 1.0
+  },
+  "multi": {
+   "n": 3,
+   "success": 1.0
+  },
+  "order": {
+   "n": 4,
+   "success": 1.0
+  },
+  "out_of_scope": {
+   "n": 1,
+   "success": 1.0
+  },
+  "policy": {
+   "n": 12,
+   "success": 0.75
+  },
+  "product": {
+   "n": 6,
+   "success": 0.833
+  },
+  "state": {
+   "n": 5,
+   "success": 1.0
+  }
+ },
+ "tools_backend": "local"
+}

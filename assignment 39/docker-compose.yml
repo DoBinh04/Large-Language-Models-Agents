@@ -1,0 +1,37 @@
+# docker compose up --build        -> API http://localhost:8000/docs , UI http://localhost:8501
+# Dense RAG + reranker: WITH_RAG_MODELS=1 docker compose up --build   (image lớn hơn ~1GB, model tải lần đầu vào volume hf-cache)
+services:
+  api:
+    build:
+      context: .
+      target: api
+      args:
+        WITH_RAG_MODELS: ${WITH_RAG_MODELS:-0}
+    env_file: .env                       # ANTHROPIC_API_KEY, BASE_MODEL, BASE_EFFORT, QUERY_REWRITE, ...
+    environment:
+      LOG_FORMAT: json
+      API_ROUTER: ${API_ROUTER:-api}
+      API_TOOLS: ${API_TOOLS:-local}
+      WARMUP: "1"                        # tải RAG index lúc khởi động thay vì ở request đầu tiên
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./results:/app/results           # trace JSONL -> python -m eval.report đọc được ở máy host
+      - hf-cache:/home/app/.cache/huggingface
+    restart: unless-stopped
+
+  ui:
+    build:
+      context: .
+      target: ui
+    environment:
+      API_URL: http://api:8000
+    ports:
+      - "8501:8501"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  hf-cache:

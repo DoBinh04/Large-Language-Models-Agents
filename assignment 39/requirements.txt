@@ -1,0 +1,23 @@
+# --- Hệ thống agent (máy local, không cần GPU) ---
+anthropic>=1.0                 # Claude API: router API, 3 agent, composer, judge
+mcp>=1.10                      # MCP server (FastMCP) + client
+numpy>=1.24
+
+# --- Serving: FastAPI + Streamlit (Docker dùng requirements-serve.txt / requirements-ui.txt) ---
+fastapi>=0.115
+uvicorn>=0.30
+streamlit>=1.38
+requests>=2.31
+
+# --- RAG đầy đủ (dense + reranker). Thiếu thì tự lùi về BM25 (hoặc đặt RAG_LIGHT=1) ---
+sentence-transformers>=3.0     # kéo theo torch + transformers
+
+# --- Small LLM: inference router (local GPU / Colab) ---
+transformers>=4.45
+peft>=0.12
+accelerate>=0.33
+
+# --- Training SFT / DPO (Colab T4 / L4) ---
+trl>=0.19                      # SFTTrainer (prompt-completion), DPOTrainer
+datasets>=2.20
+bitsandbytes>=0.43             # chỉ cần cho --qlora (Linux / Colab)

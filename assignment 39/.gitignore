@@ -1,0 +1,27 @@
+# Secrets: KHÔNG push
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Artefact train nặng / sinh lại được
+training/checkpoints/
+training/data/
+results/*.lock
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Không push: log, dashboard, chi phí
+*.log
+results/logs/
+results/dashboard.html
+results/spend.json

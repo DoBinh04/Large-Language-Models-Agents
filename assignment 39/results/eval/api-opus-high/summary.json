@@ -1,0 +1,68 @@
+{
+ "config": "api-opus-high",
+ "router": "api",
+ "router_llm": [
+  "claude-opus-5-5",
+  "high"
+ ],
+ "agents": [
+  "claude-opus-5-5",
+  "high"
+ ],
+ "overrides": null,
+ "n_scenarios": 32,
+ "n_turns": 37,
+ "task_success_rate": 0.8438,
+ "routing_acc": 1.0,
+ "intent_acc": 0.973,
+ "tool_f1_micro": {
+  "precision": 0.4937,
+  "recall": 0.975,
+  "f1": 0.6555
+ },
+ "tool_f1_macro": 0.7185,
+ "latency_ms_mean": 11719.7,
+ "latency_ms_p50": 11025.7,
+ "latency_ms_p95": 27622.8,
+ "router_ms_mean": 2790.6,
+ "cost_total_usd": 1.18728,
+ "cost_per_scenario_usd": 0.0371,
+ "cost_per_success_usd": 0.04397,
+ "llm_calls_per_turn": 3.49,
+ "input_tokens": 104137,
+ "output_tokens": 36685,
+ "cache_read_tokens": 185165,
+ "errors": 0,
+ "judge_cost_usd": 0.25352,
+ "by_category": {
+  "chitchat": {
+   "n": 1,
+   "success": 1.0
+  },
+  "multi": {
+   "n": 3,
+   "success": 1.0
+  },
+  "order": {
+   "n": 4,
+   "success": 0.75
+  },
+  "out_of_scope": {
+   "n": 1,
+   "success": 1.0
+  },
+  "policy": {
+   "n": 12,
+   "success": 0.75
+  },
+  "product": {
+   "n": 6,
+   "success": 0.833
+  },
+  "state": {
+   "n": 5,
+   "success": 1.0
+  }
+ },
+ "tools_backend": "local"
+}

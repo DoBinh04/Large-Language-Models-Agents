@@ -1,0 +1,170 @@
+[
+  {"id": "S01", "category": "product", "turns": [
+    {"user": "Mình cần tai nghe chống ồn để làm việc, tầm dưới 3 triệu", "intent": "product_inquiry", "agents": ["product"], "missing": false}],
+   "expected_tools": [{"name": "search_products", "args": {}}],
+   "criteria": "Gợi ý SoundMax Pro (P001) giá 2.490.000đ, có ANC, còn hàng. Nếu nhắc SoundMax Buds 2 thì phải nói đang hết hàng. Không gợi ý sản phẩm vượt 3 triệu."},
+
+  {"id": "S02", "category": "product", "turns": [
+    {"user": "Laptop Nova Air 14 có nâng cấp RAM được không?", "intent": "product_inquiry", "agents": ["product"], "missing": false}],
+   "expected_tools": [{"name": "search_knowledge_base", "args": {}}],
+   "criteria": "Nói rõ RAM 16GB hàn chết, không nâng cấp được; có thể nhắc SSD nâng cấp được (1 khe M.2)."},
+
+  {"id": "S03", "category": "product", "turns": [
+    {"user": "So sánh giúp mình Nova Creator 16 với Vortex Strike 15, mình dựng phim là chính", "intent": "product_inquiry", "agents": ["product"], "missing": false}],
+   "expected_tools": [{"name": "compare_products", "args": {"product_ids": ["P005", "P006"]}}],
+   "criteria": "So sánh đúng thông số (Creator 16: RTX 4060, 32GB RAM, màn 3.2K 100% DCI-P3, 32.990.000đ; Strike 15: RTX 4070, 16GB, FHD 165Hz, 24.490.000đ) và khuyên Creator 16 cho dựng phim hoặc giải thích hợp lý."},
+
+  {"id": "S04", "category": "product", "turns": [
+    {"user": "Loa SoundMax Go còn hàng không shop?", "intent": "product_inquiry", "agents": ["product"], "missing": false}],
+   "expected_tools": [{"name": "search_products", "args": {}}],
+   "criteria": "Báo loa SoundMax Go đang hết hàng. Điểm cộng nếu nói có thể đăng ký nhận thông báo / dự kiến 7–10 ngày về hàng."},
+
+  {"id": "S05", "category": "order", "turns": [
+    {"user": "Đơn DH1002 của mình giao tới đâu rồi?", "intent": "order_status", "agents": ["order"], "missing": false}],
+   "expected_tools": [{"name": "lookup_order", "args": {"order_id": "DH1002"}}],
+   "criteria": "Đơn đang giao (shipping), dự kiến 2026-10-30, mã vận đơn GHN-88812345."},
+
+  {"id": "S06", "category": "order", "turns": [
+    {"user": "Mình không nhớ mã đơn, số điện thoại 0901234567, kiểm tra đơn giúp mình", "intent": "order_status", "agents": ["order"], "missing": false}],
+   "expected_tools": [{"name": "list_orders_by_phone", "args": {"phone": "0901234567"}}],
+   "criteria": "Liệt kê 2 đơn DH1001 (tai nghe SoundMax Pro) và DH1004 (Lumi X12), cả hai đã giao."},
+
+  {"id": "S07", "category": "state", "turns": [
+    {"user": "Kiểm tra đơn hàng giúp mình với", "intent": "order_status", "agents": [], "missing": true},
+    {"user": "DH1003", "intent": "order_status", "agents": ["order"], "missing": false}],
+   "expected_tools": [{"name": "lookup_order", "args": {"order_id": "DH1003"}}],
+   "criteria": "Lượt 1 hỏi mã đơn. Lượt 2 báo đơn DH1003 đang xử lý (processing), dự kiến giao 2026-11-02, sản phẩm Pulse Watch 3."},
+
+  {"id": "S08", "category": "order", "turns": [
+    {"user": "Mình muốn huỷ đơn DH1003, không cần nữa", "intent": "cancel_order", "agents": ["order"], "missing": false}],
+   "expected_tools": [{"name": "cancel_order", "args": {"order_id": "DH1003"}}],
+   "criteria": "Xác nhận đã huỷ đơn DH1003 thành công và tiền (nếu đã chuyển khoản) hoàn trong 3–5 ngày làm việc."},
+
+  {"id": "S09", "category": "order", "turns": [
+    {"user": "Huỷ đơn DH1002 giúp mình", "intent": "cancel_order", "agents": ["order"], "missing": false}],
+   "expected_tools": [{"name": "cancel_order", "args": {"order_id": "DH1002"}}],
+   "criteria": "Giải thích không huỷ được vì đơn đang giao (shipping); hướng dẫn từ chối nhận hàng khi shipper giao. Không được nói là đã huỷ."},
+
+  {"id": "S10", "category": "policy", "turns": [
+    {"user": "Chính sách đổi trả bên mình thế nào nếu mình đổi ý không muốn dùng nữa?", "intent": "policy_question", "agents": ["policy"], "missing": false}],
+   "expected_tools": [{"name": "search_policy", "args": {}}],
+   "criteria": "Nêu: trong 15 ngày kể từ ngày nhận; còn seal hoàn 100%; đã mở hộp chưa kích hoạt hoàn 90%; điện thoại/laptop/tablet/đồng hồ đã kích hoạt không áp dụng."},
+
+  {"id": "S11", "category": "policy", "turns": [
+    {"user": "Trả góp 0% áp dụng cho đơn từ bao nhiêu tiền?", "intent": "policy_question", "agents": ["policy"], "missing": false}],
+   "expected_tools": [{"name": "search_policy", "args": {}}],
+   "criteria": "Đơn từ 3 triệu đồng, kỳ hạn 6 hoặc 12 tháng, qua thẻ tín dụng hoặc công ty tài chính."},
+
+  {"id": "S12", "category": "policy", "turns": [
+    {"user": "Đơn thanh toán COD thì hoàn tiền mất bao lâu?", "intent": "policy_question", "agents": ["policy"], "missing": false}],
+   "expected_tools": [{"name": "search_policy", "args": {}}],
+   "criteria": "Hoàn bằng chuyển khoản trong 5–7 ngày làm việc, cần số tài khoản chính chủ."},
+
+  {"id": "S13", "category": "state", "turns": [
+    {"user": "Màn hình mình mới mua về bị điểm chết, muốn đổi cái khác", "intent": "return_request", "agents": [], "missing": true},
+    {"user": "Mã đơn DH1009, đổi giúp mình cái mới nhé", "intent": "return_request", "agents": ["policy"], "missing": false}],
+   "expected_tools": [{"name": "check_return_eligibility", "args": {"order_id": "DH1009", "reason": "defect"}},
+                      {"name": "create_return_request", "args": {"order_id": "DH1009", "product_id": "P015", "reason": "defect"}}],
+   "criteria": "Lượt 1 hỏi mã đơn. Lượt 2: lỗi NSX trong 30 ngày được đổi mới miễn phí; đã tạo phiếu RMA (nêu mã RMA-...) và bước tiếp theo."},
+
+  {"id": "S14", "category": "policy", "turns": [
+    {"user": "Mình muốn trả tai nghe đơn DH1001 vì không thích, hộp vẫn còn seal", "intent": "return_request", "agents": ["policy"], "missing": false}],
+   "expected_tools": [{"name": "check_return_eligibility", "args": {"order_id": "DH1001", "reason": "change_of_mind"}}],
+   "criteria": "Không đủ điều kiện đổi ý vì đã quá 15 ngày (nhận 2026-10-14, hôm nay là ngày thứ 16). Không được tạo phiếu đổi trả."},
+
+  {"id": "S15", "category": "policy", "turns": [
+    {"user": "Đơn DH1005 mình muốn trả tai nghe Buds 2, đã mở hộp dùng thử nhưng không thích", "intent": "return_request", "agents": ["policy"], "missing": false}],
+   "expected_tools": [{"name": "check_return_eligibility", "args": {"order_id": "DH1005", "product_id": "P002", "reason": "change_of_mind", "condition": "opened_unactivated"}}],
+   "criteria": "Không áp dụng đổi ý vì tai nghe true wireless đã mở hộp (lý do vệ sinh). Không tạo phiếu."},
+
+  {"id": "S16", "category": "policy", "turns": [
+    {"user": "Đơn DH1005 cho mình trả con chuột Vortex M3, chưa bóc seal, làm phiếu trả hàng luôn giúp mình", "intent": "return_request", "agents": ["policy"], "missing": false}],
+   "expected_tools": [{"name": "check_return_eligibility", "args": {"order_id": "DH1005", "product_id": "P012", "reason": "change_of_mind", "condition": "sealed"}},
+                      {"name": "create_return_request", "args": {"order_id": "DH1005", "product_id": "P012", "reason": "change_of_mind", "condition": "sealed"}}],
+   "criteria": "Tạo phiếu RMA thành công, hoàn 100% = 450.000đ, đơn COD nên hoàn bằng chuyển khoản 5–7 ngày làm việc, nêu mã phiếu."},
+
+  {"id": "S17", "category": "policy", "turns": [
+    {"user": "Đơn DH1012 mình mua 2 điện thoại Lumi A5, muốn trả cả hai vì đổi ý. Một máy đã kích hoạt, một máy còn nguyên seal. Được không?", "intent": "return_request", "agents": ["policy"], "missing": false}],
+   "expected_tools": [{"name": "check_return_eligibility", "args": {"order_id": "DH1012", "reason": "change_of_mind", "condition": "sealed"}},
+                      {"name": "check_return_eligibility", "args": {"order_id": "DH1012", "reason": "change_of_mind", "condition": "activated"}}],
+   "criteria": "Máy còn seal: trả được, hoàn 100% (4.490.000đ). Máy đã kích hoạt: không áp dụng đổi ý. Không tự tạo phiếu khi khách chỉ hỏi 'được không'."},
+
+  {"id": "S18", "category": "policy", "turns": [
+    {"user": "Laptop Vortex Strike 15 của mình (đơn DH1007) bị liệt bàn phím, còn bảo hành không? Còn thì tạo phiếu bảo hành giúp mình", "intent": "warranty_claim", "agents": ["policy"], "missing": false}],
+   "expected_tools": [{"name": "check_warranty", "args": {"order_id": "DH1007"}},
+                      {"name": "create_warranty_ticket", "args": {"order_id": "DH1007", "product_id": "P006"}}],
+   "criteria": "Còn bảo hành đến 2027-09-04; đã tạo phiếu bảo hành (mã BH-...), thời gian xử lý 7–14 ngày làm việc, miễn phí gửi đi (sản phẩm trên 5 triệu)."},
+
+  {"id": "S19", "category": "policy", "turns": [
+    {"user": "Điện thoại Lumi X12 đơn DH1004 mình làm rơi vỡ màn hình, có được bảo hành không?", "intent": "warranty_claim", "agents": ["policy"], "missing": false}],
+   "expected_tools": [{"name": "check_warranty", "args": {"order_id": "DH1004"}}, {"name": "search_policy", "args": {}}],
+   "criteria": "Máy vẫn trong thời hạn bảo hành nhưng rơi vỡ không thuộc diện bảo hành; có thể sửa chữa có tính phí. Không tạo phiếu bảo hành miễn phí."},
+
+  {"id": "S20", "category": "policy", "turns": [
+    {"user": "Bàn phím đơn DH1008 bị liệt mấy phím, mình muốn đổi cái mới", "intent": "return_request", "agents": ["policy"], "missing": false}],
+   "expected_tools": [{"name": "check_return_eligibility", "args": {"order_id": "DH1008", "reason": "defect"}}],
+   "criteria": "Nhận hàng 2026-10-03 (ngày thứ 27) nên lỗi NSX vẫn trong 30 ngày: được đổi mới cùng model hoặc hoàn 100%, miễn phí vận chuyển."},
+
+  {"id": "S21", "category": "multi", "turns": [
+    {"user": "Đơn DH1002 bao giờ tới? Với lại laptop trong đơn đó sạc bằng củ 65W được không?", "intent": "multi", "agents": ["order", "product"], "missing": false}],
+   "expected_tools": [{"name": "lookup_order", "args": {"order_id": "DH1002"}}, {"name": "search_knowledge_base", "args": {}}],
+   "criteria": "Dự kiến giao 2026-10-30 (đang giao). Laptop Nova Air 14 sạc USB-C PD tối thiểu 65W nên củ 65W dùng được (đơn cũng có sạc GaN 65W PowerCube)."},
+
+  {"id": "S22", "category": "multi", "turns": [
+    {"user": "Pulse Watch 3 có đeo đi bơi được không, và nếu mua về không ưng thì trả được không?", "intent": "multi", "agents": ["product", "policy"], "missing": false}],
+   "expected_tools": [{"name": "search_knowledge_base", "args": {}}, {"name": "search_policy", "args": {}}],
+   "criteria": "5ATM: bơi bể bơi được, không lặn sâu / xông hơi. Đổi ý trong 15 ngày; đồng hồ đã kích hoạt thì không áp dụng đổi ý, còn seal hoàn 100%."},
+
+  {"id": "S23", "category": "state", "turns": [
+    {"user": "Đơn DH1011 của mình gồm những gì vậy?", "intent": "order_status", "agents": ["order"], "missing": false},
+    {"user": "Nó còn bảo hành không?", "intent": "warranty_claim", "agents": ["policy"], "missing": false}],
+   "expected_tools": [{"name": "lookup_order", "args": {"order_id": "DH1011"}}, {"name": "check_warranty", "args": {"order_id": "DH1011"}}],
+   "criteria": "Lượt 1: laptop Nova Creator 16, đã giao 2025-12-12. Lượt 2: còn bảo hành đến 2027-12-12 (24 tháng)."},
+
+  {"id": "S24", "category": "state", "turns": [
+    {"user": "Tư vấn giúp mình điện thoại pin trâu dưới 5 triệu", "intent": "product_inquiry", "agents": ["product"], "missing": false},
+    {"user": "Máy đó có NFC không?", "intent": "product_inquiry", "agents": ["product"], "missing": false}],
+   "expected_tools": [{"name": "search_products", "args": {}}, {"name": "search_knowledge_base", "args": {}}],
+   "criteria": "Lượt 1 gợi ý Lumi A5 4.490.000đ, pin 6000mAh. Lượt 2 trả lời Lumi A5 không có NFC."},
+
+  {"id": "S25", "category": "chitchat", "turns": [
+    {"user": "Chào shop", "intent": "chitchat", "agents": [], "missing": false}],
+   "expected_tools": [],
+   "criteria": "Chào lại thân thiện và hỏi có thể giúp gì. Không gọi tool."},
+
+  {"id": "S26", "category": "out_of_scope", "turns": [
+    {"user": "Viết cho mình một bài thơ về mùa thu Hà Nội", "intent": "out_of_scope", "agents": [], "missing": false}],
+   "expected_tools": [],
+   "criteria": "Từ chối lịch sự / hướng khách về các dịch vụ của cửa hàng. Không viết bài thơ dài."},
+
+  {"id": "S27", "category": "policy", "turns": [
+    {"user": "Mình muốn trả hàng đơn DH1006", "intent": "return_request", "agents": ["policy"], "missing": false}],
+   "expected_tools": [{"name": "check_return_eligibility", "args": {"order_id": "DH1006"}}],
+   "criteria": "Đơn DH1006 đã bị huỷ (đã hoàn tiền 2026-10-17) nên không có gì để trả hàng."},
+
+  {"id": "S28", "category": "state", "turns": [
+    {"user": "Tai nghe gaming của mình bị mất tiếng một bên, bảo hành kiểu gì?", "intent": "warranty_claim", "agents": [], "missing": true},
+    {"user": "đơn DH1010 nhé", "intent": "warranty_claim", "agents": ["policy"], "missing": false}],
+   "expected_tools": [{"name": "check_warranty", "args": {"order_id": "DH1010"}}],
+   "criteria": "Lượt 1 hỏi mã đơn. Lượt 2: đơn DH1010 đã được trả hàng và hoàn tiền (2026-10-02) nên không thể bảo hành theo đơn này; không tạo phiếu."},
+
+  {"id": "S29", "category": "policy", "turns": [
+    {"user": "Giao hàng nhanh mất mấy ngày, phí bao nhiêu?", "intent": "policy_question", "agents": ["policy"], "missing": false}],
+   "expected_tools": [{"name": "search_policy", "args": {}}],
+   "criteria": "1–2 ngày làm việc (nội thành Hà Nội/TP.HCM 4 giờ), phí 50.000đ."},
+
+  {"id": "S30", "category": "multi", "turns": [
+    {"user": "Đơn DH1002 mình đổi địa chỉ nhận hàng được không?", "intent": "multi", "agents": ["order", "policy"], "missing": false}],
+   "expected_tools": [{"name": "lookup_order", "args": {"order_id": "DH1002"}}, {"name": "search_policy", "args": {}}],
+   "criteria": "Không đổi được vì đơn đang giao (shipping); chỉ đổi địa chỉ khi đơn còn processing."},
+
+  {"id": "S31", "category": "product", "turns": [
+    {"user": "Laptop gaming nào dưới 25 triệu còn hàng?", "intent": "product_inquiry", "agents": ["product"], "missing": false}],
+   "expected_tools": [{"name": "search_products", "args": {}}],
+   "criteria": "Gợi ý Vortex Strike 15 giá 24.490.000đ (RTX 4070, 165Hz), còn hàng. Không gợi ý Creator 16 (32.990.000đ) như là dưới 25 triệu."},
+
+  {"id": "S32", "category": "product", "turns": [
+    {"user": "Màn hình Nova View 27 cắm một dây USB-C vào Nova Air 14 vừa xuất hình vừa sạc được không?", "intent": "product_inquiry", "agents": ["product"], "missing": false}],
+   "expected_tools": [{"name": "search_knowledge_base", "args": {}}],
+   "criteria": "Được: cổng USB-C của màn hình cấp nguồn 90W, một dây vừa xuất hình vừa sạc, Nova Air 14 dùng được."}
+]
